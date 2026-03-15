@@ -28,10 +28,19 @@
   margin-bottom: 40px;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.my-80 {
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
 .form-wrapper {
   border: 1px solid var(--gray-color, #D9D9D9);
   background: #F7F7F7;
-      padding: 40px 100px 45px 100px;
+  padding: 40px 100px 45px 100px;
 }
 
 .form-title {
@@ -168,6 +177,30 @@ a:hover {
 
 .blue-btn:hover {
   background: var(--Aqua);
+  color: var(--white, #fff);
+  text-decoration: none;
+}
+
+.blue-black-btn {
+  padding: 14px 28px;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  background: var(--Aqua);
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-black-btn:hover {
+  background: var(--Blackish);
   color: var(--white, #fff);
   text-decoration: none;
 }
@@ -360,12 +393,14 @@ a:hover {
 }
 
 .central-title {
-  color: var(--Blk, #000);
-  font-family: Manrope;
-  font-size: 40px;
+  color: var(--Blackish, #221F20);
+  text-align: center;
+  font-family: Lato;
+  font-size: 48px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 48px;
+  font-weight: 300;
+  line-height: 52px;
+  text-transform: uppercase;
   margin-bottom: 24px;
 }
 
@@ -705,25 +740,68 @@ p {
 
 /* fnancing page css start here */
 
-.why-finance-section {
-  padding: 40px 0 120px;
+/* Container & Section Spacing */
+.marina-financing {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.financing-inner {
+  max-width: calc(100% - 25%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.financing-text {
+  margin-bottom: 48px;
+}
+
+.financing-action {
+  padding-left: 90px;
+  padding-top: 48px;
+}
+
+.financing-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  width: 100%;
+}
+
+.financing-heading-box {
+  width: 35%;
+}
+
+.financing-description-box {
+  width: calc(100% - 35%);
 }
 
 .why-finance-list {
   gap: 18px;
+  margin-bottom: 48px;
 }
 
-.why-finance-list h3 {
-  color: var(--Blk, #000);
-  font-family: Manrope;
-  font-size: 18px;
+.finance-list-item {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 24px;
-  line-height: 24px !important;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1600px) {
+  .central-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
   .form-wrapper {
     padding: 60px 60px 70px 60px;
   }
@@ -741,6 +819,10 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
+  .financing-inner {
+    max-width: calc(100% - 10%);
+  }
+
   .clemens-lg-container {
     max-width: 100%;
     padding-left: 20px;
@@ -758,9 +840,39 @@ p {
 }
 
 @media screen and (max-width: 991px) {
+  .central-title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .financing-heading-box,
+  .financing-description-box {
+    width: 100%;
+  }
+
+  .financing-content {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+
+  .financing-action {
+    padding-left: 0;
+    padding-top: 48px;
+  }
+
+  .marina-financing {
+    padding: 50px 20px;
+  }
+
+  .financing-title {
+    font-size: 28px;
+  }
+
   .location-section {
     padding: 90px 0 40px 0;
   }
+
   .contact-form-section {
     margin-top: 58px;
   }
@@ -776,9 +888,19 @@ p {
 }
 
 @media (max-width: 576px) {
-}
+  .central-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
 
-@media (max-width: 576px) {
+  .marina-financing {
+    padding: 50px 15px;
+  }
+
+  .financing-button {
+    width: 100%;
+    text-align: center;
+  }
 
   .title-heading {
     font-size: 25px;
