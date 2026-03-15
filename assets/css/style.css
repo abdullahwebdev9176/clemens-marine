@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blackish: #221F20;
+  --gray-color: #d9d9d9;
+  --lightest-gray-color: #fafafa;
+  --Aqua: #007AA9;
+  --white: #fff;
+
+  /* Fonts */
+  --font-Lato: "Lato", sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Arial-regular';
+  src: url('../fonts/arial/Arial-regular.ttf');
+}
+
+/* form css start here */
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.form-wrapper {
+  border: 1px solid var(--gray-color, #D9D9D9);
+  background: #F7F7F7;
+      padding: 40px 100px 45px 100px;
+}
+
+.form-title {
+  color: var(--Blackish, #221F20);
+  text-align: center;
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.field-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.error_field {
+  border-color: red !important;
+}
+
+.iti {
+  width: 100%;
+}
+
+.custom-form-control {
+  border: 1px solid var(--gray-color, #D9D9D9);
+  background: var(--Wt, #FFF);
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: .375rem .75rem;
+}
+
+.custom-textarea {
+  border: 1px solid var(--gray-color, #D9D9D9);
+  background: var(--Wt, #FFF);
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+}
+
+.custom-textarea::placeholder {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.custom-textarea::placeholder {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.custom-textarea:focus {
+  outline: none;
+  border: 1px solid var(--gray-color, #D9D9D9);
+  box-shadow: none;
+}
+
+.custom-form-control:focus {
+  outline: none;
+  border: 1px solid var(--gray-color, #D9D9D9);
+  box-shadow: none;
+}
+
+.form-sec {
+  padding: 64px 20px 80px 20px;
+  background: #F7F7F7;
+}
+
+.common-form-wrapper {
+  max-width: calc(100% - 78%);
+  min-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-inner-title {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.scroll-down {
+  scroll-padding-top: 120px;
+}
+
+/* Common css start here  */
+
+a:hover {
+  text-decoration: none;
+}
+
+.blue-btn {
+  padding: 14px 28px;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  background: var(--Aqua);
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-btn:hover {
+  background: var(--Aqua);
+  color: var(--white, #fff);
+  text-decoration: none;
+}
+
+.arrow-btn {
+  padding: 2px 0;
+  color: var(--Aqua, #007AA9);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--Aqua);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-btn:hover {
+  border-bottom: 1px solid var(--Aqua);
+  color: var(--Aqua, #007AA9);
+  text-decoration: none;
+}
+
+.clemens-container {
+  max-width: calc(100% - 28%);
+  margin: 0 auto;
+}
+
+.clemens-lg-container {
+  max-width: calc(100% - 12%);
+  margin: 0 auto;
+}
+
+.common-header {
+  position: relative;
+  padding-top: 32%;
+  min-height: 350px;
+}
+
+.common-header .page-banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.central-content {
+  max-width: calc(100% - 50%);
+  margin: 64px auto;
+  text-align: center;
+}
+
+.central-banner {
+  position: relative;
+  padding-top: 34%;
+  min-height: 300px;
+}
+
+.central-banner .central-banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.central-banner-content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
+  height: 100%;
+  max-width: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 13%;
+}
+
+.central-banner-content {
+  max-width: 600px;
+}
+
+.central-banner-title {
+  color: var(--Wt, #FFF);
+  font-family: var(--font-Michroma);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.clemens-featured-box {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.clemens-featured-col .content-box {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.clemens-featured-col {
+  width: 50%;
+}
+
+.clemens-featured-img {
+  width: 100%;
+  height: 100%;
+}
+
+.clemens-featured-img>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clemens-featured-col {
+  width: 50%;
+}
+
+.clemens-lg-container .clemens-featured-col .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  max-width: 63%;
+  margin: 0 auto;
+}
+
+.clemens-container .clemens-featured-col .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.featured-subtitle {
+  color: var(--Blk, #000);
+  font-family: var(--font-Michroma);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.title-heading {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.bold-title-heading {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.central-title {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+p {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Common css ends here  */
+
+/* contact page css start here */
+
+.contact-form-section {
+  margin-top: -70px;
+}
+
+.location-items-list {
+  display: flex;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.location-section {
+  padding: 120px 0 80px 0;
+  border-top: 1px solid var(--gray-color, #D9D9D9);
+  margin-top: -40px;
+}
+
+.addres-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.addres-bar a {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.addres-bar a:hover {
+  color: var(--Blackish, #221F20);
+}
+
+.phone-number {
+  color: var(--Aqua, #007AA9);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block;
+  margin: 16px 0;
+}
+
+.phone-number:hover {
+  color: var(--Aqua, #007AA9);
+}
+
+.hours-sec ul {
+  padding-left: 0;
+}
+
+.hours-sec ul li {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.hours-title {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.location-subtitle {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.content-title {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.contact-card-img {
+  position: relative;
+  padding-top: 50%;
+}
+
+.contact-card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* career page css start here */
+
+.career-header::after {
+  background: unset;
+  position: unset;
+}
+
+.employment-subtitle {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.positions-header {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.job-card {
+  border-radius: 8px;
+  border: 1px solid var(--D9, #D9D9D9);
+  background: #FAFAFA;
+  padding: 36px 40px 44px 36px;
+}
+
+.job-title {
+  color: var(--Blk, #000);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.job-location {
+  color: rgba(0, 0, 0, 0.60);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.job-location span {
+  color: #C74D41;
+  opacity: 0.6;
+  margin-right: 5px;
+}
+
+.job-btn-outline {
+  border-radius: 6px;
+  color: var(--Blk, #000);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background: transparent;
+}
+
+.job-btn-outline:hover {
+  color: var(--Blk, #000);
+  border: 2px solid #000;
+  background: transparent;
+}
+
+.job-btn-filled {
+  background-color: #003a70;
+  border-color: #003a70;
+  border-radius: 6px;
+  color: var(--Wt, #FFF);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 10px 40px;
+}
+
+.job-btn-filled:hover {
+  background-color: #003a70;
+  border-color: #003a70;
+}
+
+.career-modal-wrapper {
+  max-width: 70%;
+  margin: 0 0 0 auto;
+}
+
+.job-description-modal .modal-dialog {
+  max-width: 1250px;
+  width: 100%;
+}
+
+.job-description-modal .modal-header .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.job-description-modal .modal-header {
+  border-bottom: none;
+}
+
+.job-detail-section {
+  font-family: 'Arial', sans-serif;
+  color: #000;
+}
+
+.job-detail-main-title {
+  color: var(--Blk, #000);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.job-detail-meta {
+  color: var(--Blk, rgba(34, 34, 34, 0.60));
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.detail-section-label {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.detail-body-text {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.detail-bullet-list {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.detail-bullet-list li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.detail-divider {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin: 2rem 0;
+}
+
+.job-detail-time {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.apply-form-modal .modal-dialog {
+  max-width: 600px;
+  width: 100%;
+}
+
+
+/* fnancing page css start here */
+
+.why-finance-section {
+  padding: 40px 0 120px;
+}
+
+.why-finance-list {
+  gap: 18px;
+}
+
+.why-finance-list h3 {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  line-height: 24px !important;
+}
+
+@media (max-width: 1600px) {
+  .form-wrapper {
+    padding: 60px 60px 70px 60px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .clemens-container {
+    max-width: calc(100% - 15%);
+  }
+
+  .title-heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clemens-lg-container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-title {
+    color: var(--Blackish, #221F20);
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .location-section {
+    padding: 90px 0 40px 0;
+  }
+  .contact-form-section {
+    margin-top: 58px;
+  }
+
+  .hero-text-col {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .clemens-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
+
+  .title-heading {
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .form-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .form-wrapper {
+    padding: 40px 20px 40px 20px;
+  }
+}

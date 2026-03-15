@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ------------nav-bar start ------------ -->
+
+   <!-- Navigation Bar -->
+    <nav class="navbar-austin">
+        <div class="header-container">
+
+            <div class="navbar-left">
+                <ul class="navbar-menu" id="navbarMenu">
+                    <li class="has-mega-menu">
+                        <div class="nav-item-wrapper">
+                            <a href="javascript:void(0);" class="active" id="inventoryMenuTrigger">Sales</a>
+                            <span class="mobile-toggle"><i class="fa fa-angle-down"></i></span>
+                        </div>
+                        <ul class="mobile-sub-menu">
+                            <li><a href="javascript:void(0);">All Inventory</a></li>
+                            <li><a href="javascript:void(0);">New Boat Sales</a></li>
+                            <li><a href="javascript:void(0);">Pre-Owned Boat Sales</a></li>
+                            <li><a href="javascript:void(0);">Closeout Boats</a></li>
+
+                            <li><a href="javascript:void(0);">Vantage Boat Protection</a></li>
+                            <li><a href="javascript:void(0);">Consign/Trade Your Boat</a></li>
+                            <li><a href="javascript:void(0);">Get Financing</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-mega-menu">
+                        <div class="nav-item-wrapper">
+                            <a href="/service-storage" id="serviceMenuTrigger">Service</a>
+                            <span class="mobile-toggle"><i class="fa fa-angle-down"></i></span>
+                        </div>
+                        <ul class="mobile-sub-menu">
+                            <li><a href="/service-center">Service Center</a></li>
+                            <li><a href="/parts-department">Parts Department</a></li>
+                            <li><a href="/boat-storage">Boat Storage</a></li>
+                            <li><a href="/seasonal-slips">Seasonal Slips</a></li>
+                            <li><a href="/dock-hoists">Dock & Hoists</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="nav-item-wrapper">
+                            <a href="/pro-shop">Storage</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item-wrapper">
+                            <a href="javascript:void(0);">Fishing Depot</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="/">
+                    <img src="./assets/images/mega-menu/austin-logo.png" alt="South Austin Marine Logo">
+                </a>
+            </div>
+
+
+            <!-- Right Side -->
+            <div class="navbar-right">
+
+                <!-- Location -->
+                <div class="navbar-location align-items-center" id="locationDropdownTrigger">
+                    <div class="search-icon">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="navbar-location-text">
+                        <span class="navbar-location-label">Main Location</span>
+                        <span class="navbar-location-name" id="currentLocationName">(512) 892-2432</span>
+                    </div>
+
+                    <!-- Location Dropdown -->
+                    <div class="location-dropdown" id="locationDropdown">
+                        <div class="location-item selected" data-name="Canandaigua Showroom" data-label="Your Store">
+                            <div class="loc-header">
+                                <p><span>South Austin Marine</span> </p>
+                                <span class="loc-title">Main Location</span>
+                            </div>
+                            <div class="loc-details">
+                                5340 Highway 290, West Austin, TX, 78735
+                            </div>
+                            <div class="loc-phone">(512) 892-2432</div>
+                        </div>
+
+                        <div class="location-separator"></div>
+
+                        <div class="location-item" data-name="Canandaigua Marina" data-label="Your Store">
+                            <div>
+                                <span class="loc-title">Lakeside Location</span> <br>
+                                <span class="loc-phone-title">(512) 266-2225</span>
+                            </div>
+                            <span class="select-btn">Select</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Button -->
+                <button class="navbar-more-btn" id="moreMenuTrigger">
+                    <span>MORE</span>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Mega Menu -->
+    <div class="side-mega-menu" id="sideMegaMenu">
+        <div class="side-menu-content">
+            <ul class="side-menu-links primary">
+                <li><a href="javascript:void(0);">Wake Shop</a></li>
+                <li><a href="javascript:void(0);">Events</a></li>
+                <li><a href="javascript:void(0);">About Us</a></li>
+                <li><a href="javascript:void(0);">News & Articles</a></li>
+            </ul>
+
+            <ul class="side-menu-links secondary mt-5">
+                <li><a href="javascript:void(0);">Our Staff</a></li>
+                <li><a href="javascript:void(0);">Employment</a></li>
+                <li><a href="javascript:void(0);">Testimonials</a></li>
+                <li><a href="javascript:void(0);">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Inventory Mega Menu -->
+    <div class="inventory-mega-menu" id="inventoryMegaMenu">
+        <div class="header-container px-lg-5">
+            <div class="mega-menu-content">
+                <!-- Left Sidebar -->
+                <div class="mega-menu-sidebar">
+                    <ul class="mega-menu-links top-items">
+
+                        <li><a href="javascript:void(0);">All Inventory</a></li>
+                        <li><a href="javascript:void(0);">New Boat Sales</a></li>
+                        <li><a href="javascript:void(0);">Pre-Owned Boats</a></li>
+                        <li><a href="javascript:void(0);">Closeout Boats</a></li>
+                    </ul>
+                        <div class="srchby-size">
+                            <div class="h3-style">By Size</div>
+                            <div class="size-list">
+                                <p>10-19’</p>
+                            <p>20-29’</p>
+                            <p>30-39’</p>
+                            <p>40-49’</p>
+                        </div>
+                    </div>
+                    <ul class="mega-menu-links bottom-items">
+                        <li><a href="javascript:void(0);">Vantage Boat Protection</a></li>
+                        <li><a href="javascript:void(0);">Consign/Trade Your Boat</a></li>
+                        <li><a href="javascript:void(0);">Get Financing</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Right Content Area -->
+                <div class="mega-menu-brands">
+                    <div class="mega-menu-brands-grid">
+                        <!-- Brand Card 1 -->
+                        <a href="/inventory/lund" class="brand-card">
+                            <img src="./assets/images/mega-menu/avalon-img.png" alt="Lund Boats" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Avalon pontoons logo-wt 1.png" alt="Lund Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 2 -->
+                        <a href="/inventory/avalon" class="brand-card">
+                            <img src="./assets/images/mega-menu/formula-img.png" alt="Avalon Pontoons" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Formula-wt 1.png" alt="Avalon Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 3 -->
+                        <a href="/inventory/nautique" class="brand-card">
+                            <img src="./assets/images/mega-menu/moomba-img.png" alt="Nautique" class="brand-bg">
+                            <img src="./assets/images/mega-menu/moomba-logo-wt 1.png" alt="Nautique Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 4 -->
+                        <a href="/inventory/scout" class="brand-card">
+                            <img src="./assets/images/mega-menu/scb-img.png" alt="Scout" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Layer 2.png" alt="Scout Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 5 -->
+                        <a href="/inventory/regal" class="brand-card">
+                            <img src="./assets/images/mega-menu/blazer-img.png" alt="Regal" class="brand-bg">
+                            <img src="./assets/images/mega-menu/blazer_logo_wt 1.png" alt="Regal Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 6 -->
+                        <a href="/inventory/bennington" class="brand-card">
+                            <img src="./assets/images/mega-menu/pathfinder-img.png" alt="Bennington" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Pathfinder-logo-wt 1.png" alt="Bennington Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 7 -->
+                        <a href="/inventory/regulator" class="brand-card">
+                            <img src="./assets/images/mega-menu/hewes-img.png" alt="Regulator" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Heweslogo-wt-minimal 1.png" alt="Regulator Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 8 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/shallow-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Shallow_Sport_Logo 2.png" alt="Honda Marine Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 9 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/blackfin-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Blackfin-logo 1.png" alt="Honda Marine Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 9 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/meverik-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/maverick boats-wt-minimal 1.png" alt="Honda Marine Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 9 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/regal-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Regal_Logo-stacked-wt 1.png" alt="Honda Marine Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 9 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/montery-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/monterey logo 2024 - wt 1.png" alt="Honda Marine Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 9 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/supra-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/supra_logo-wt-sm 1.png" alt="Honda Marine Logo"
+                                class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 9 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/robalo-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/robalo-logo-png-transparent 2.png"
+                                alt="Honda Marine Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 9 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/vexus-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Vexus-logo-wt 1.png" alt="Honda Marine Logo"
+                                class="brand-logo">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service & Storage Mega Menu -->
+    <div class="service-mega-menu" id="serviceMegaMenu">
+        <div class="container-desktop">
+            <div class="mega-menu-content align-items-center">
+
+                <!-- Right Content Area -->
+                <div class="mega-menu-brands">
+                    <div class="mega-menu-brands-grid service-grid">
+
+
+                        <a href="/service-center" class="service-card">
+                            <img src="./assets/images/mega-menu/service-icon.svg" alt="Service Center"
+                                class="service-bg">
+
+                            <div class="service-title">Service Center</div>
+                        </a>
+                        <a href="/service-center" class="service-card">
+                            <img src="./assets/images/mega-menu/Winterization-icon.svg" alt="Winterization"
+                                class="service-bg">
+
+                            <div class="service-title">Winterization</div>
+                        </a>
+                        <a href="/service-center" class="service-card">
+                            <img src="./assets/images/mega-menu/Storage-icon.svg" alt="Storage options"
+                                class="service-bg">
+
+                            <div class="service-title">Storage options</div>
+                        </a>
+                        <a href="/service-center" class="service-card">
+                            <img src="./assets/images/mega-menu/Rigging-icon.svg" alt="Rigging Shop" class="service-bg">
+
+                            <div class="service-title">Rigging Shop</div>
+                        </a>
+                        <a href="/service-center" class="service-card">
+                            <img src="./assets/images/mega-menu/Lakeside-icon.svg" alt="Lakeside Service"
+                                class="service-bg">
+
+                            <div class="service-title">Lakeside Service</div>
+                        </a>
+                        <a href="/service-center" class="service-card">
+                            <img src="./assets/images/mega-menu/Parts-icon.svg" alt="Parts Department"
+                                class="service-bg">
+
+                            <div class="service-title">Parts Department</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------nav-bar End ------------ -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="./assets/videos/home-video/austin-header.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container-seager">
+                <h1>Austin’s Anchor <br class="d-lg-block d-none">for All Things Boating.</h1>
+                <div>
+                    <a id="home-new-boats-for-sale-btn" href="javscript:void(0)" class="btn-global">New Boats For Sale</a>
+                </div>
+                <div>
+                    <a id="home-pre-owned-boats-btn" href="javscript:void(0)" class="btn-global mt-2">PRE-OWNED Boats</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section class="brand-carousel-section py-5">
+    <div class="container-fluid">
+        <div class="owl-carousel brand-carousel">
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/Avalon pontoons logo-blk 1.png" alt="Avalon">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/formula.png" alt="Formula">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/moomba.png" alt="Moomba">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/SCB_Logo 1.svg" alt="SCB Boats">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/bennigton.jpg" alt="Bennington">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/pathfinder.png" alt="Pathfinder">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/hewes.png" alt="Hewes">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/Shallow_Sport_Logo 1.svg" alt="Shallow Sport">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/blackfin.png" alt="Blackfin">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/meverik.png" alt="Maverick">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/regal.png" alt="Regal">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/montery.png" alt="Monterey">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/supra.jpg" alt="Supra">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/robalo.png" alt="Robalo">
+                </a>
+            </div>
+
+            <div class="brand-item">
+                <a href="javascript:void(0);">
+                    <img src="./assets/images/home/blazer-boats.jpg" alt="Blazer Boats">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="hero-banner slider-section">
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="banner-slide">
+                        <img src="./assets/images/home/banner-img1.png" alt="South Austin Marine Banner 1">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="banner-slide">
+                        <img src="./assets/images/home/banner-img2.png" alt="South Austin Marine Banner 2">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="banner-slide">
+                        <img src="./assets/images/home/banner-img3.png" alt="South Austin Marine Banner 3">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="banner-slide">
+                        <img src="./assets/images/home/banner-img4.png" alt="South Austin Marine Banner 4">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Navigation -->
+            <div class="carousel-navigation">
+
+                <a href="#heroCarousel" role="button" data-slide="prev" class="nav-arrow prev-arrow">
+                </a>
+
+                <ol class="carousel-indicators custom-indicators">
+                    <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#heroCarousel" data-slide-to="1"></li>
+                    <li data-target="#heroCarousel" data-slide-to="2"></li>
+                    <li data-target="#heroCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <a href="#heroCarousel" role="button" data-slide="next" class="nav-arrow next-arrow">
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="austin-featured">
+        <div class="austin-lg-container">
+            <div class="austin-featured-box reverse-col">
+
+            <div class="austin-featured-col">
+                    <div class="austin-featured-img">
+                        <img src="./assets/images/home/welcome-vid-img.png" alt="South Austin Marine">
+                    </div>
+                </div>
+
+                <div class="austin-featured-col">
+                    <div class="content-box mob-pb">
+                        <p class="featured-subtitle">welcome</p>
+                        <h3 class="bold-title-heading">Your Trusted Austin Boat Shop for Everything on the Water</h3>
+                        <p>Here at South Austin Marine, we’re the marine boat store that you can count on for anything
+                            and everything when it comes to boat parts and boat repairs. We offer a variety of boats for
+                            sale, and our selection is second to none. South Austin Marine prides itself on having the
+                            friendliest and most knowledgeable boat shop staff in Austin, Texas. Our goal as the top
+                            boat dealership in the area is to help our customers find the perfect watercraft to fit
+                            their lifestyle, along with just the right parts and accessories. When you’re looking for a
+                            quality marine boat store that can meet you and your watercraft needs, you need Marine Boat
+                            Store.</p>
+
+                        <div class="mt-4 mt-lg-5 sec-btn">
+                            <a id="home-more-about-us-btn" href="/about" class="btn-global-rd">MORE ABOUT US</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="new-arrivals-section">
+        <div class="container-fluid px-0">
+            <h2 class="section-title mb-4">New Arrivals</h2>
+
+            <div id="arrivals-carousel" class="owl-carousel owl-theme">
+                <div class="arrival-card">
+                    <div class="image-placeholder"></div>
+                    <div class="card-content">
+                        <h3 class="model-title">2024 MAKE MODEL</h3>
+                        <p class="price">$123,456</p>
+                        <p class="specs">Pre-Owned | 21 ft 4 in | Location</p>
+                    </div>
+                </div>
+
+                <div class="arrival-card">
+                    <div class="image-placeholder"></div>
+                    <div class="card-content">
+                        <h3 class="model-title">2024 MAKE MODEL</h3>
+                        <p class="price">Call For Price</p>
+                        <p class="specs">New | 24 ft | Location</p>
+                    </div>
+                </div>
+
+                <div class="arrival-card">
+                    <div class="image-placeholder">
+                        <span class="badge-promotional">PROMOTIONAL</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="model-title">2024 MAKE MODEL</h3>
+                        <p class="price">Call For Price</p>
+                        <p class="specs">New | 24 ft | Location</p>
+                    </div>
+                </div>
+
+                <div class="arrival-card">
+                    <div class="image-placeholder"></div>
+                    <div class="card-content">
+                        <h3 class="model-title">2024 MAKE MODEL</h3>
+                        <p class="price">$123,456</p>
+                        <p class="specs">Pre-Owned | 21 ft 4 in | Location</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a id="home-view-listings-btn" href="javscript:void(0)" class="btn-global-rd">VIEW LISTINGS</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-austin-fluid fishing-depot-section">
+        <div class=" p-0">
+            <div class="row no-gutters fishing-depot-hero">
+                <div class="col-md-6 offset-md-6 hero-content-wrapper">
+                    <div class="hero-text-content">
+                        <h2 class="hero-title">SOUTH AUSTIN<br>FISHING DEPOT</h2>
+                        <p class="hero-description">
+                            Our dedicated lineup of fishing boats and gear, built as a go-to hub for anglers who live
+                            for time on the water.
+                        </p>
+                        <div class="hero-actions">
+                            <a id="home-fishing-depot-btn" href="javscript:void(0)" class="btn-global-outline">FISHING DEPOT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="austin-featured">
+        <div class="austin-lg-container">
+            <div class="austin-featured-box reverse-col">
+
+                <div class="austin-featured-col">
+                    <div class="content-box mob-pb">
+                        <p class="featured-subtitle">Service</p>
+                        <h3 class="bold-title-heading">Our Service & Parts Center Is Unlike any Other</h3>
+                        <p>At South Austin Marine, the Service and Parts Department is built around a commitment to
+                            excellence, delivering expert care that’s truly unlike any other. Their highly trained
+                            technicians, advanced equipment, and fully stocked parts inventory ensure fast, reliable
+                            repairs and maintenance, while their customer-first approach reflects a genuine pride in
+                            keeping every boat performing at its best on the water.</p>
+
+                        <div class="mt-4 mt-lg-5 sec-btn">
+                            <a id="home-service-info-requests-btn" href="/about" class="btn-global-rd">Service INFO & Requests</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="austin-featured-col">
+                    <div class="austin-featured-img">
+                        <img src="./assets/images/home/service-img.png" alt="South Austin Marine">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Links Section -->
+    <section class="services-links-section">
+        <div class="container-fluid px-lg-4">
+            <div class="services-links-grid">
+
+                <!-- Card 1 -->
+                <div class="service-link-card">
+                    <img src="./assets/images/home/boat-sales.png" alt="Boat Sales">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Boat Sales</h3>
+                        <p class="card-desc">
+                            Shop a wide selection of new and pre-owned boats backed by expert guidance and trusted
+                            brands.
+                        </p>
+                        <a id="home-go-to-listings-btn" href="/inventory/new-boat-sales" class="card-btn">Go To Listings ></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-link-card">
+                    <img src="./assets/images/home/boat-storage.png" alt="Boat Storage">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Boat Storage</h3>
+                        <p class="card-desc">
+                            Protect your investment year-round with secure indoor and outdoor storage options.
+                        </p>
+                        <a id="home-storage-options-requests-btn" href="/inventory/pre-owned-boat-sales" class="card-btn">Storage Options & Requests ></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-link-card">
+                    <img src="./assets/images/home/wake-shop.png" alt="Wake Shop">
+                    <div class="card-overlay">
+                        <h3 class="card-title">Wake Shop</h3>
+                        <p class="card-desc">
+                            Gear up for the water with boards, apparel, accessories, and essentials from top wake
+                            brands.
+                        </p>
+                        <a id="home-whats-in-store-btn" href="/service-center" class="card-btn">What’s In Store ></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bottom-features-section pt-0">
+        <div class="container-austin-fluid">
+            <div class="row justify-content-center px-lg-5">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="feature-card p-md-0">
+                        <div class="bottom-card-img">
+                            <a href="javascript:void(0);">
+                                <img src="./assets/images/home/sell-trade.png" alt="Sell or Trade Your Boat at South Austin Marine"
+                            class="feature-img w-100">
+                            </a>
+                        </div>
+                        
+                        <h3 class="feature-title">
+                            <a href="javascript:void(0);">Sell/Trade Your Boat</a>
+                        </h3>
+                        <p class="feature-text">Looking to upgrade or move on from your current boat? South Austin
+                            Marine makes selling or trading your boat simple, transparent, and hassle-free with fair
+                            market evaluations and expert support.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-lg-4">
+                    <div class="feature-card p-md-0">
+                        <div class="bottom-card-img">
+                            <a href="javascript:void(0);">
+                                <img src="./assets/images/home/get-financing.png" alt="Get Financing for Your Boat"
+                            class="feature-img w-100">
+                            </a>
+                        </div>
+                        
+                        <h3 class="feature-title"><a href="javascript:void(0);">
+                            Get Financing
+                        </a></h3>
+                        <p class="feature-text">Our flexible financing options make owning your next boat easier than
+                            ever, offering competitive rates, trusted lending partners, and a smooth approval process
+                            tailored to your needs.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-lg-4">
+                    <div class="feature-card p-md-0">
+                        <div class="bottom-card-img">
+                            <a href="javascript:void(0);">
+                                <img src="./assets/images/home/events.png" alt="South Austin Marine Events" class="feature-img w-100">
+                            </a>
+                        </div>
+                        <h3 class="feature-title">
+                            <a href="javascript:void(0);">
+                                Events at South Austin Marine
+                            </a>
+                        </h3>
+                        <p class="feature-text">From on-the-water demos to customer appreciation events and seasonal
+                            showcases, South Austin Marine hosts exciting experiences that bring the local boating
+                            community together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desktop Footer -->
+    <footer class="desktop-footer">
+        <!-- Top Section: Connect & Contact -->
+
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="newsletter-content-flex">
+                    <div class="newsletter-headline">CATCH THE LATEST AT SOUTH AUSTIN MARINE</div>
+
+                    <form class="newsletter-inline-form" action="#" method="POST">
+                        <div class="input-group-wrapper">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email address"
+                                required>
+                            <button id="home-newsletter-submit-btn" type="submit" class="newsletter-submit-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-links-section">
+            <div class="container-austin-fluid px-lg-5">
+                <div class="row">
+
+                    <div class="col-lg-6 border-right-white">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="footer-logo-section text-center">
+                                    <img src="./assets/images/mega-menu/austin-logo.png" alt="Footer Logo">
+                                </div>
+                                <div class="footer-social-section">
+                                    <ul class="footer-social-list">
+                                        <li><a href="javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="footer-location-section">
+                                    <div class="footer-location-title">Main Location</div>
+                                    <p class="footer-address">5340 Highway 290 <br> West Austin, TX , USA</p>
+                                    <a href="tel:5128922432" class="footer-phone">(512) 892-2432</a>
+                                </div>
+                                <div class="footer-location-section">
+                                    <div class="footer-location-title">Consignment Specialty Store</div>
+                                    <p class="footer-address">3003 Hwy. 620 N. <br> Austin, TX , USA</p>
+                                    <a href="tel:5122662225" class="footer-phone">(512) 266-2225</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+
+                            <div class="col-lg-4">
+                                <div class="footer-col-title">SALES</div>
+                                <ul class="footer-links-list">
+                                    <li><a href="/inventory/all">All Boats</a></li>
+                                    <li><a href="/inventory/new-boat-sales">New Boats</a></li>
+                                    <li><a href="/inventory/pre-owned-boat-sales">Pre-Owned Boats</a></li>
+                                    <li><a href="/inventory/outboards-for-sale">Fishing Depot</a></li>
+                                    <li><a href="/dock-hoists">Vantage Boat Protection</a></li>
+                                    <li><a href="/financing">Financing</a></li>
+                                    <li><a href="/trade">Trade / Sell Your Boat</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="col-lg-4">
+                                <div class="footer-col-title">SERVICE</div>
+                                <ul class="footer-links-list">
+                                    <li><a href="/service-center">Service Center</a></li>
+                                    <li><a href="/boat-storage">Storage</a></li>
+                                    <li><a href="/parts-department">Parts Department</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="col-lg-4">
+                                <div class="footer-col-title">COMPANY</div>
+                                <ul class="footer-links-list">
+                                    <li><a href="javascript:void(0)">Wake Shop</a></li>
+                                    <li><a href="javascript:void(0)">News & Articles</a></li>
+                                    <li><a href="javascript:void(0)">Events</a></li>
+                                    <li><a href="javascript:void(0)">About Us</a></li>
+                                    <li><a href="javascript:void(0)">Our Staff</a></li>
+                                    <li><a href="javascript:void(0)">Employment</a></li>
+                                    <li><a href="javascript:void(0)">Contact Us</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-section">
+            <div class="container-austin-md">
+                <div class="row align-items-center">
+                    <div class="col-12 text-center">
+                        <p class="copyright-text">
+                            &copy;Copyright <span class="mx-2">|</span> <a href="javascript:void(0)">Powered by MDS
+                                Brand</a> <span class="mx-2">|</span> <a href="/privacy-policy">Privacy Policy</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
