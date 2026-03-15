@@ -910,6 +910,54 @@ p {
   object-fit: cover;
 }
 
+.video-gallery-img {
+  position: relative;
+  padding-top: 55%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-gallery-img video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.is-playing .play-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video-title {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .play-icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 1600px) {
   .central-title {
     font-size: 40px;
@@ -933,6 +981,15 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
+  .video-title {
+    color: var(--Blackish, #221F20);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+}
   .clemens-container-fluid .clemens-featured-col .content-box {
     max-width: 85%;
   }
@@ -958,9 +1015,10 @@ p {
 }
 
 @media screen and (max-width: 991px) {
-   .brand-gallery {
+  .brand-gallery {
     display: none;
   }
+
   .clemens-container-fluid .clemens-featured-col .content-box {
     padding: 40px 25px;
     text-align: center;

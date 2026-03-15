@@ -21,3 +21,32 @@ if ($('.gallery-carousel').length) {
     })
 
 };
+
+
+$(document).ready(function() {
+
+    $('.video-gallery-img').on('click', function() {
+
+        var video = $(this).find('video').get(0);
+        var $container = $(this);
+
+        if (video.paused) {
+
+            $('video').each(function() {
+                this.pause();
+                $(this).closest('.video-gallery-img').removeClass('is-playing');
+            });
+
+            video.play();
+            $container.addClass('is-playing');
+        } else {
+
+            video.pause();
+            $container.removeClass('is-playing');
+        }
+    });
+
+    $('video').on('ended', function() {
+        $(this).closest('.video-gallery-img').removeClass('is-playing');
+    });
+});
