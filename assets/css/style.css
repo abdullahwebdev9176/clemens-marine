@@ -453,6 +453,9 @@ p {
   line-height: normal;
 }
 
+.positioned-banner {
+  object-position: -50% 100%;
+}
 
 /* Common css ends here  */
 
@@ -554,7 +557,7 @@ p {
 
 .contact-card-img {
   position: relative;
-  padding-top: 50%;
+  padding-top: 55%;
 }
 
 .contact-card-img img {
@@ -949,16 +952,92 @@ p {
   margin-top: 10px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* about page css start here */
 
-  .play-icon-circle {
-    width: 40px;
-    height: 40px;
-  }
+.about-location-section {
+  background-image: url('../images/about/pattern.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clemens-featured-box {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.clemens-featured-col .content-box {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.clemens-featured-col {
+  width: 50%;
+}
+
+.clemens-featured-img {
+  width: 100%;
+  height: 100%;
+}
+
+.clemens-featured-img>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clemens-featured-col {
+  width: 50%;
+}
+
+.featured-title-heading {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+.clemens-lg-container .clemens-featured-col .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 100px;
+}
+
+.clemens-container .clemens-featured-col .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.location-header {
+  padding-top: 64px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 @media (max-width: 1600px) {
+  .clemens-lg-container .clemens-featured-col .content-box {
+    padding: 40px 50px;
+  }
+
+  .featured-title-heading {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
   .central-title {
     font-size: 40px;
     line-height: 45px;
@@ -989,7 +1068,8 @@ p {
     font-weight: 700;
     line-height: normal;
     margin-top: 10px;
-}
+  }
+
   .clemens-container-fluid .clemens-featured-col .content-box {
     max-width: 85%;
   }
@@ -1015,6 +1095,25 @@ p {
 }
 
 @media screen and (max-width: 991px) {
+  .positioned-banner {
+    object-position: unset;
+  }
+
+  .clemens-lg-container .clemens-featured-box {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+  .clemens-lg-container .clemens-featured-col {
+    width: 100%;
+  }
+
+  .clemens-lg-container .clemens-featured-col .content-box {
+    padding: 40px 0;
+  }
+
   .brand-gallery {
     display: none;
   }
@@ -1026,11 +1125,11 @@ p {
     max-width: 100%;
   }
 
-  .clemens-featured-col {
+  .clemens-container-fluid .clemens-featured-col {
     width: 100%;
   }
 
-  .clemens-featured-box {
+  .clemens-container-fluid .clemens-featured-box {
     display: flex;
     flex-wrap: wrap;
     padding-top: 40px;
@@ -1081,6 +1180,18 @@ p {
 
   .clemens-container {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .featured-title-heading {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .play-icon-circle {
+    width: 40px;
+    height: 40px;
   }
 }
 
