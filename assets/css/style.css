@@ -609,14 +609,16 @@ p {
 
 .mega-menu-parent {
   position: absolute;
-  top: 20px;
+  top: 101px;
   left: 0;
   z-index: 200;
   background: var(--white);
   border-bottom: 1px solid var(--gray-color);
   width: 100%;
   transition: all 0.5s;
-  /* display: none; */
+}
+.inventory-mega-menu-wrapper{
+  display: none;
 }
 
 .inventory-mega-menu {
@@ -625,18 +627,24 @@ p {
   display: flex;
   padding: 40px 90px 83px 90px;
   max-width: calc(100% - 9%);
-  display: none;
+  
 }
-
+.inventory-mega-menu.active{
+  display: block;
+}
+.outboard-mega-menu.active{
+  display: block;
+}
 .outboard-mega-menu {
   position: absolute;
-  top: 81px;
+  top: 0;
   left: 0;
   z-index: 200;
   border-bottom: 1px solid var(--gray-color);
   background: var(--white);
   width: 100%;
   transition: all 0.5s;
+  display: none;
 }
 
 .brand-img-sec {
@@ -733,14 +741,21 @@ p {
   line-height: normal;
   padding-left: 10px;
 }
-
+.inventory-mega-menu-brand-box{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  max-width: calc(100% - 12%);
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 16px;
+}
 .mega-menu-brand-box {
   width: 100%;
   margin: 0 auto;
   display: flex;
   padding: 40px 90px 83px 90px;
   max-width: calc(100% - 12%);
-  /* display: none; */
 }
 
 .outboard-mega-menu-item {
