@@ -1156,7 +1156,6 @@ p {
 }
 
 .robalo-black-btn:hover {
-  opacity: 0.85;
   color: #fff;
   text-decoration: none;
 }
@@ -1168,7 +1167,7 @@ p {
 
 /* Lineup Section */
 .robalo-lineup-section {
-  padding: 80px 0 64px 0;
+  padding: 80px 0 120px 0;
 }
 
 .robalo-sec-title {
@@ -1280,6 +1279,11 @@ p {
   object-fit: cover;
 }
 
+.download-card-content i {
+  color: var(--Blackish);
+  padding-right: 28px;
+}
+
 @media (max-width: 1600px) {
   .clemens-lg-container .clemens-featured-col .content-box {
     padding: 40px 50px;
@@ -1379,6 +1383,10 @@ p {
 }
 
 @media screen and (max-width: 991px) {
+  .download-section {
+    padding-bottom: 40px;
+  }
+
   .robalo-hero-title {
     font-size: 30px;
     line-height: 40px;
