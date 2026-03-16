@@ -609,11 +609,11 @@ p {
 
 .mega-menu-parent {
   position: absolute;
-  top: 80px;
+  top: 20px;
   left: 0;
   z-index: 200;
-  border-bottom: 1px solid #EEE;
-  background: red;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-color);
   width: 100%;
   transition: all 0.5s;
   /* display: none; */
@@ -630,11 +630,11 @@ p {
 
 .outboard-mega-menu {
   position: absolute;
-  top: 80px;
+  top: 81px;
   left: 0;
   z-index: 200;
-  border-bottom: 1px solid #EEE;
-  background: red;
+  border-bottom: 1px solid var(--gray-color);
+  background: var(--white);
   width: 100%;
   transition: all 0.5s;
 }
