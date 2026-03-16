@@ -511,7 +511,8 @@ p {
   padding: 40px 20px;
   display: inline-block;
 }
-.nav-link-item:hover{
+
+.nav-link-item:hover {
   color: var(--Blackish, #221F20);
 }
 
@@ -602,6 +603,176 @@ p {
 
 .location-dropdown li {
   margin-bottom: 48px;
+}
+
+/* mega menu css start here */
+
+.mega-menu-parent {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 200;
+  border-bottom: 1px solid #EEE;
+  background: red;
+  width: 100%;
+  transition: all 0.5s;
+  /* display: none; */
+}
+
+.inventory-mega-menu {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 40px 90px 83px 90px;
+  max-width: calc(100% - 9%);
+  display: none;
+}
+
+.outboard-mega-menu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 200;
+  border-bottom: 1px solid #EEE;
+  background: red;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.brand-img-sec {
+  width: 250px;
+}
+
+.mega-menu-content-box {
+  width: calc(100% - 250px);
+  padding: 0 0 0 80px;
+}
+
+.mega-menu-top-heading {
+  margin-bottom: 25px;
+}
+
+.mega-menu-links ul {
+  padding-left: 0;
+}
+
+.mega-menu-links ul li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.mega-menu-links ul li a {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mega-menu-brand-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 16px;
+}
+
+.mega-menu-brand-item {
+  width: calc(100% / 3 - 11px);
+  list-style: none;
+  position: relative;
+  padding-top: 20%;
+}
+
+.mega-menu-brand-item .mega-menu-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.mega-menu-logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 200px;
+  width: 100%;
+}
+
+.mega-menu-logo-wrapper .mega-menu-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.close-mega-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 23px;
+}
+
+.close-mega-menu i {
+  color: #7B7B7B;
+}
+
+.close-mega-menu span {
+  color: #7B7B7B;
+  font-family: 'acumin-light';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-left: 10px;
+}
+
+.mega-menu-brand-box {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 40px 90px 83px 90px;
+  max-width: calc(100% - 12%);
+  /* display: none; */
+}
+
+.outboard-mega-menu-item {
+  width: calc(100% / 3 - 11px);
+  list-style: none;
+  position: relative;
+  padding-top: 20%;
+}
+
+.outboard-mega-menu-item .mega-menu-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.outboard-mega-menu-item .mega-menu-logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 200px;
+  width: 100%;
+}
+
+.outboard-mega-menu-item .mega-menu-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* contact page css start here */
@@ -1451,9 +1622,25 @@ p {
   .form-wrapper {
     padding: 60px 60px 70px 60px;
   }
+
+  .mega-menu-logo-wrapper {
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 1500px) {
+  .mega-menu-links ul li a {
+    font-size: 20px;
+  }
+
+  .inventory-mega-menu {
+    padding: 40px 50px 83px 50px;
+  }
+
+  .mega-menu-content-box {
+    padding: 0 0 0 40px;
+  }
+
   .inven-sec-title {
     font-size: 40px;
     line-height: 45px;
@@ -1511,6 +1698,14 @@ p {
 
 
 @media screen and (max-width: 1200px) {
+  .mega-menu-links ul li a {
+    font-size: 16px;
+  }
+
+  .mega-menu-logo-wrapper {
+    max-width: 120px;
+  }
+
   .nav-link-item {
     padding: 40px 9px;
     font-size: 14px;
