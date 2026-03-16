@@ -68,3 +68,26 @@ $(document).ready(function () {
         });
     }
 });
+
+$(document).ready(function() {
+
+    $('.location-dropdown-item').on('click', function(e) {
+        e.stopPropagation();
+        $('.location-dropdown').slideToggle(200);
+    });
+
+    $('.location-dropdown ul li').on('click', function() {
+
+        let name = $(this).find('.dropdown-location-name').text();
+        let phone = $(this).find('.dropdown-location-number').text();
+
+        $('.location-name-text').text(name + ' Location');
+        $('.location-number').text(phone);
+
+        $('.location-dropdown').slideUp(200);
+    });
+
+    $(document).on('click', function() {
+        $('.location-dropdown').slideUp(200);
+    });
+});

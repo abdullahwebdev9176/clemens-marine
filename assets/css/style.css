@@ -511,6 +511,9 @@ p {
   padding: 40px 20px;
   display: inline-block;
 }
+.nav-link-item:hover{
+  color: var(--Blackish, #221F20);
+}
 
 .site-logo-wrapper {
   max-width: 233px;
