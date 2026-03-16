@@ -23,16 +23,16 @@ if ($('.gallery-carousel').length) {
 };
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.video-gallery-img').on('click', function() {
+    $('.video-gallery-img').on('click', function () {
 
         var video = $(this).find('video').get(0);
         var $container = $(this);
 
         if (video.paused) {
 
-            $('video').each(function() {
+            $('video').each(function () {
                 this.pause();
                 $(this).closest('.video-gallery-img').removeClass('is-playing');
             });
@@ -46,7 +46,25 @@ $(document).ready(function() {
         }
     });
 
-    $('video').on('ended', function() {
+    $('video').on('ended', function () {
         $(this).closest('.video-gallery-img').removeClass('is-playing');
     });
+});
+
+
+$(document).ready(function () {
+    if ($('.robalo-gallery-carousel').length) {
+        $('.robalo-gallery-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            responsive: {
+                0: { items: 1 },
+                600: { items: 2 },
+                1000: { items: 3 }
+            }
+        });
+    }
 });

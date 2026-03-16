@@ -1028,6 +1028,258 @@ p {
   text-align: center;
 }
 
+/* brand page css start here */
+
+/* brand page css start here */
+.clemens-brand-container {
+  max-width: calc(100% - 34%);
+  margin: 0 auto;
+}
+
+.clemens-brand-container .content-box {
+  padding-right: 7.5rem;
+}
+
+.robalo-hero {
+  position: relative;
+  padding-top: 49%;
+  min-height: 450px;
+}
+
+.robalo-hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.robalo-hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.robalo-hero-overlay-boat {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 45%;
+  z-index: 2;
+}
+
+.robalo-hero-overlay-boat .boat-img {
+  width: 100%;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6));
+  transform: rotate(-15deg);
+}
+
+.robalo-hero-content {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  max-width: 900px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.robalo-hero-title {
+  color: var(--white, #FFF);
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.robalo-hero-subtitle {
+  color: #FFF;
+}
+
+/* Action Bar */
+.robalo-action-bar {
+  background: #fff;
+  padding: 25px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.robalo-action-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.robalo-action-btns {
+  display: flex;
+  gap: 20px;
+  width: calc(100% - 30%);
+  padding: 28px 0;
+}
+
+.robalo-brand-logo-box {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+
+.robalo-brand-logo-box img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.robalo-black-btn {
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  padding: 16px 30px;
+}
+
+.robalo-black-btn:hover {
+  opacity: 0.85;
+  color: #fff;
+  text-decoration: none;
+}
+
+.robalo-brand-logo-box .logo-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Lineup Section */
+.robalo-lineup-section {
+  padding: 80px 0 64px 0;
+}
+
+.robalo-sec-title {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.robalo-lineup-item {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.row .col-md-3:last-child .robalo-lineup-item {
+  border-right: none;
+}
+
+.brand-border {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.brand-border:first-child {
+  border-left: 2px solid #eee;
+}
+
+.brand-border:last-child {
+  border-right: 2px solid #eee;
+}
+
+.robalo-lineup-item .lineup-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+
+.robalo-lineup-name {
+  color: var(--Blackish);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  -webkit-text-stroke-width: 0.5px;
+}
+
+.brand-banner-content {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+}
+
+.brand-banner {
+  border-bottom: 1px solid var(--D9, #D9D9D9);
+  background: #FFF;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.brand-subtitle {
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  opacity: 0.6;
+}
+
+.inven-sec-header {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+
+.inven-sec-title {
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 52px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.5px;
+}
+
+.gallery-carousel .item {
+  position: relative;
+  padding-top: 60%;
+}
+
+.gallery-carousel .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 1600px) {
   .clemens-lg-container .clemens-featured-col .content-box {
     padding: 40px 50px;
@@ -1049,6 +1301,19 @@ p {
 }
 
 @media (max-width: 1500px) {
+  .inven-sec-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .clemens-brand-container .content-box {
+    padding-right: 3.5rem;
+  }
+
+  .clemens-brand-container {
+    max-width: calc(100% - 25%);
+  }
+
   .clemens-container {
     max-width: calc(100% - 15%);
   }
@@ -1060,6 +1325,25 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
+  .brand-banner-content {
+    bottom: 80px;
+  }
+
+  .robalo-hero-title {
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 3px;
+  }
+
+  .inven-sec-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .clemens-brand-container {
+    max-width: calc(100% - 15%);
+  }
+
   .video-title {
     color: var(--Blackish, #221F20);
     font-family: Lato;
@@ -1095,11 +1379,73 @@ p {
 }
 
 @media screen and (max-width: 991px) {
+  .robalo-hero-title {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 2.5px;
+    margin-bottom: 25px;
+  }
+
+  .inven-sec-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .robalo-sec-title {
+    text-align: center;
+  }
+
+  .robalo-lineup-section {
+    padding: 50px 0 50px 0;
+  }
+
+  .clemens-brand-container .content-box {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .clemens-featured-col {
+    width: 100%;
+  }
+
+  .robalo-black-btn {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .brand-banner {
+    position: unset;
+    padding-bottom: 40px;
+  }
+
+  .robalo-brand-logo-box {
+    margin: 0 auto;
+  }
+
+  .robalo-action-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .robalo-action-btns {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .robalo-hero-content {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+
   .positioned-banner {
     object-position: unset;
   }
 
-  .clemens-lg-container .clemens-featured-box {
+  .clemens-lg-container .clemens-featured-box,
+  .clemens-brand-container .clemens-featured-box {
     display: flex;
     padding-top: 0;
     padding-bottom: 0;
@@ -1196,6 +1542,30 @@ p {
 }
 
 @media (max-width: 576px) {
+  .brand-banner-content {
+    bottom: 50px;
+  }
+
+  .robalo-hero-title {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+  }
+
+  .robalo-hero-title {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+  }
+
+  .clemens-brand-container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .central-title {
     font-size: 30px;
     line-height: 37px;
