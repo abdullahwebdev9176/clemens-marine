@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <footer>
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+            <h2 class="newsletter-title">ENTER OUR WORLD</h2>
+            <p>Follow us on IG for behind-the-scenes, new boats, and real boating life.</p>
+            <div class="newsletter-wrapper gtm_form" data-form-id="Newsletter Form" id="subscribe_newsletter">
+                <div class="newsletter-form">
+                    <label for="subscriber_email" class="sr-only">Enter your email address</label>
+                    <input type="text" name="honeypot" id="honeypot" style="display: none;">
+                    <input type="email" id="subscriber_email" class="require_check"
+                        placeholder="Enter your email address" />
+                    <button data-form-id="Newsletter Form" class="gtm_form_submit g-recaptcha"
+                        data-sitekey="{{config.googleCaptchaSiteKey}}" data-callback='subscribe_newsletter'
+                        data-action='submit'>
+                    
+                    <img src="./assets/images/icons/arrow.svg" alt=""></button>
+                </div>
+                <div class="field-error text-left" id="error_subscriber_email"></div>
+            </div>
+
+            <div class="social-icons">
+                <a href="{{#if config.instagram}}{{config.instagram}}{{else}}javascript:void(0){{/if}}"
+                    target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="{{#if config.facebook}}{{config.facebook}}{{else}}javascript:void(0){{/if}}" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="{{#if config.youtube}}{{config.youtube}}{{else}}javascript:void(0){{/if}}" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="{{#if config.twitter}}{{config.twitter}}{{else}}javascript:void(0){{/if}}" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Main Footer -->
+        <div class="footer-box">
+            <div class="footer-grid">
+                <div class="footer-col-1">
+
+                    <div class="footer-column">
+                        <div>
+                           <a href="/">
+                             <img src="./assets/images/site-logos/clemens-logo.webp" alt="Clemens Logo">
+                           </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Boats & Motors</h4>
+                        <ul>
+                            <li class="arrow-link"><a href="/boats-for-sale">All Boats<span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/new-boats-for-sale">New Boats <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/used-pre-owned-boats-for-sale">Pre-Owned <span>↓</span></a>
+                            </li>
+                            <li class="arrow-link"><a href="/service">Service Your Boat <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/service">Outboards <span>↓</span></a></li>
+                            <li><a href="/financing">Financing</a></li>
+                            <li><a href="/value-trade">Trade / Sell Your Boat</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Brands</h4>
+                        <ul>
+                            <li class="arrow-link"><a href="/brand/alumaweld">Alumaweld <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/brand/godfrey">Godfrey <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/brand/hewes">Hewes <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/brand/north-river">North River <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/brand/pro-steelheader">Pro-Steelheader <span>↓</span></a></li>
+                            <li class="arrow-link"><a href="/brand/stabicraft">StabiCraft <span>↓</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>MORE</h4>
+                        <ul class="company-links">
+                            <li><a href="/gallery">Gallery</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/blog">News & Articles </a></li>
+                            <li><a href="/about">Careers</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-mobile-box">
+
+                    <div class="footer-accordion">
+                        <div class="footer-accordion-header">
+                            <span>Sales</span>
+                            <span class="arrow-icon">↓</span>
+                        </div>
+
+                        <div class="footer-accordion-content">
+                            <ul>
+                                <li><a href="/boats-for-sale">All Boats</a></li>
+                                <li><a href="/new-boats-for-sale">New Boats</a></li>
+                                <li><a href="/used-pre-owned-boats-for-sale">Pre-Owned</a></li>
+                                <li><a href="/service">Service Your Boat</a></li>
+                                <li><a href="/financing">Financing</a></li>
+                                <li><a href="/value-trade">Trade / Sell Your Boat</a></li>
+                                <li><a href="/customer-boat-info">Customer Boat Info</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-accordion">
+                        <div class="footer-accordion-header">
+                            <span>Brands</span>
+                            <span class="arrow-icon">↓</span>
+                        </div>
+
+                        <div class="footer-accordion-content">
+                            <ul>
+                                <li>
+                                    <div class="menu-logo-box">
+
+                                        <div class="menu-logo">
+                                            <a href="/brand/Manitou">
+                                                <img src="/assets/images/brand-logos/bay-logo-1.webp" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/brand/pathfinder-boats">
+                                                <img src="/assets/images/brand-logos/bay-logo-2.webp" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/brand/cobia-boats">
+                                                <img src="/assets/images/brand-logos/bay-logo-3.webp" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/brand/hewes">
+                                                <img src="/assets/images/brand-logos/bay-logo-4.webp" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/brand/regulator">
+                                                <img src="/assets/images/brand-logos/bay-logo-5.webp" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/brand/qwest-pontoons">
+                                                <img src="/assets/images/brand-logos/bay-logo-6.webp" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/brand/phoenix-bass-boats">
+                                                <img src="/assets/images/brand-logos/bay-logo-7.webp" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="menu-logo">
+                                            <a href="/brand/vexus">
+                                                <img src="/assets/images/brand-logos/bay-logo-8.webp" alt="">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-accordion">
+                        <div class="footer-accordion-header">
+                            <span>Company</span>
+                            <span class="arrow-icon">↓</span>
+                        </div>
+
+                        <div class="footer-accordion-content">
+                            <ul>
+                                <li><a href="/proshop">Bay Marine Store</a></li>
+                                <li><a href="/tournament-hub">Tournament</a></li>
+                                <li><a href="/events">Events</a></li>
+                                <li><a href="/about">About us</a></li>
+                                <li><a href="/links">Helpful Links</a></li>
+                                <li><a href="/careers">Crew/Careers</a></li>
+                                <li><a href="/contact#cali_contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="footer-col-2 company-info">
+                    <div class="location-footer">
+					<ul class="footer-location-list">
+						<li>
+							<div class="location-info">
+								<p class="footer-location-name">EUGENE &nbsp; ></p>
+								<p class="footer-location-number">541.688.5483</p>
+							</div>
+						</li>
+						<li>
+							<div class="location-info">
+								<p class="footer-location-name">PORTLAND &nbsp; ></p>
+								<p class="footer-location-number">503.655.0160</p>
+							</div>
+						</li>
+						<li>
+							<div class="location-info">
+								<p class="footer-location-name">TROUTDALE &nbsp; ></p>
+								<p class="footer-location-number">503.492.7400</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <ul>
+                    <li class="bottom-links"><a href="javascript:void(0)"></a>Copyright 2025 </li>
+                    <li class="bottom-links"><a id="footer-mds-brand-button" href="https://mdsbrand.com/"
+                            target="_blank">Powered by MDS Brand&nbsp;</a></li>
+                    <li class="bottom-links"><a id="footer-privacy-policy" href="/sitemap.xml">Sitemap&nbsp;</a></li>
+                </ul>
+            </div>
+
+            <p class="recaptcha-disclaimer">
+                This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy
+                    Policy</a>
+                and
+                <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of
+                    Service</a>
+                apply.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
