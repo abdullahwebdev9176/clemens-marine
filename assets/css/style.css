@@ -2829,10 +2829,12 @@ footer {
   line-height: 52px;
   text-transform: lowercase;
 }
-.memoriesCarousel .item{
+
+.memoriesCarousel .item {
   position: relative;
   padding-top: 101%;
 }
+
 .memoriesCarousel .item img {
   position: absolute;
   top: 0;
@@ -2841,6 +2843,119 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+
+.wallOfFameSection{
+  padding-bottom: 40px;
+}
+.marina-locations {
+  background-color: #1a1a1a;
+  background-image: url('../images/home-pattern.webp');
+  background-size: cover;
+  padding: 65px 0 112px 0;
+}
+
+.marina-accent-line {
+  width: 100px;
+  height: 2px;
+  background-color: #3ca9d3;
+  margin: 30px 0;
+}
+
+.marina-subtitle-gray {
+ color: var(--white, #FFF);
+text-align: center;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 1px;
+}
+.marina-locations-header{
+  margin-bottom: 30px;
+}
+/* Card Styling */
+.marina-location-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.marina-map-wrapper {
+  height: 276px;
+  overflow: hidden;
+  background-color: #e0ddd8;
+}
+
+.marina-map-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marina-map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info Styling */
+.marina-city-name {
+  color: var(--Blackish, #221F20);
+  text-align: center;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.marina-phone-link {
+  color: var(--Aqua, #007AA9);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.marina-phone-link:hover {
+  color: var(--Aqua, #007AA9);
+}
+
+.marina-address a {
+  color: var(--Blackish, #221F20);
+  text-align: center;
+  /* Paragraph */
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  text-decoration-line: underline;
+}
+
+.marina-address a:hover {
+  color: var(--Blackish, #221F20);
+}
+.marina-location-info{
+  padding: 24px 20px 43px 20px;
+}
+/* Responsive Scaling */
+@media (max-width: 991px) {
+  .marina-title-white {
+    font-size: 1.8rem;
+  }
+}
+
 /* Responsive Tweaks */
 @media (max-width: 767px) {
 
