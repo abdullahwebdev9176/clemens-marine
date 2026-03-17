@@ -282,6 +282,32 @@ a:hover {
   text-decoration: none;
 }
 
+.outline-btn {
+  padding: 14px 28px;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border: 2px solid var(--white);
+  background: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.outline-btn:hover {
+  background: var(--Aqua);
+  color: var(--white, #fff);
+  text-decoration: none;
+  border: 2px solid var(--Aqua);
+}
+
 .arrow-btn {
   padding: 2px 0;
   color: var(--Aqua, #007AA9);
@@ -2345,6 +2371,10 @@ footer {
   border: 1px solid var(--white);
 }
 
+.home-brand-card:hover .home-brand-bg {
+  filter: brightness(0.7) grayscale(0.1);
+}
+
 .home-brand-bg {
   position: absolute;
   top: 0;
@@ -2354,6 +2384,7 @@ footer {
   object-fit: cover;
   display: block;
   filter: brightness(0.4) grayscale(0.2);
+  transition: all 0.3s ease;
 }
 
 .home-brand-overlay {
@@ -2524,7 +2555,7 @@ footer {
   position: relative;
   z-index: 2;
   background-color: #fff;
-  padding-top: 25px;
+  padding-top: 8px;
   padding-bottom: 40px;
 }
 
@@ -2648,8 +2679,8 @@ footer {
 
 /* Container Background */
 .marina-inventory {
-  background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 80px;
+  padding-top: 50px;
 }
 
 .marina-heading-blue {
@@ -2662,15 +2693,18 @@ footer {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
+
 .marina-media-col {
   width: 100%;
   height: 100%;
 }
-.marina-media-col  img{
+
+.marina-media-col img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 .marina-btn {
   color: var(--white, #FFF);
   text-align: center;
@@ -2690,20 +2724,83 @@ footer {
   align-items: center;
   gap: 6px;
 }
+
 .marina-btn:hover {
   background: var(--Aqua, #007AA9);
   color: var(--white, #FFF);
   text-decoration: none;
 }
-.marina-action-group{
+
+.marina-action-group {
   display: flex;
   gap: 10px;
 }
+
 /* Image Utilities */
 .marina-img-shadow {
   /* Optional: subtle shadow if images aren't pre-rendered with them */
   max-width: 100%;
   height: auto;
+}
+
+/* Hero Container with Background Image */
+.marina-hero-trade {
+  background: url('../images/home/home-banner.webp') no-repeat center center;
+  background-size: cover;
+  min-height: 800px;
+  position: relative;
+  margin-top: 72px;
+}
+
+.marina-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.marina-hero-overlay {
+  min-height: 800px;
+  position: relative;
+}
+
+.marina-hero-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(34, 31, 32, 0.00) 0%, rgba(34, 31, 32, 0.60) 100%);
+  z-index: 1;
+}
+
+.marina-hero-text {
+  color: var(--white);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+/* Responsive Tweaks */
+@media (max-width: 767px) {
+
+  .marina-hero-trade,
+  .marina-hero-overlay {
+    min-height: 500px;
+  }
+
+  .marina-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .marina-btn-outline {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* Layout Spacing Adjustments */
