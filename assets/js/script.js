@@ -20,6 +20,19 @@ if ($('.gallery-carousel').length) {
         }
     })
 
+    // $('.boat-listing-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     nav: false,
+    //     dots: false,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         }
+    //     }
+    // })
+
+
 };
 
 
@@ -69,46 +82,46 @@ $(document).ready(function () {
     }
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('.toggle-mega-menu').on('click', function(e) {
+    $('.toggle-mega-menu').on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
-        
+
         let $target = $('#' + $(this).data('title'));
 
         $('.inventory-mega-menu-wrapper, .outboard-mega-menu, .location-dropdown').not($target).slideUp();
-        
+
         $target.slideToggle();
     });
 
-    $('.location-dropdown-item').on('click', function(e) {
+    $('.location-dropdown-item').on('click', function (e) {
         e.stopPropagation();
-        
+
         $('.inventory-mega-menu-wrapper, .outboard-mega-menu').slideUp();
-        
+
         $('.location-dropdown').slideToggle();
     });
 
-    $('.location-dropdown ul li').on('click', function() {
+    $('.location-dropdown ul li').on('click', function () {
         $('.location-name-text').text($(this).find('.dropdown-location-name').text() + ' Location');
         $('.location-number').text($(this).find('.dropdown-location-number').text());
         $('.location-dropdown').slideUp();
     });
 
-    $(document).on('click', function(e) {
+    $(document).on('click', function (e) {
         const $target = $(e.target);
-        
+
         if (!$target.closest('.toggle-mega-menu, .mega-menu-parent').length) {
             $('.inventory-mega-menu-wrapper, .outboard-mega-menu').slideUp();
         }
-        
+
         if (!$target.closest('.location-dropodown-wrapper').length) {
             $('.location-dropdown').slideUp();
         }
     });
 
-    $('.close-mega-menu').on('click', function() {
+    $('.close-mega-menu').on('click', function () {
         $(this).closest('div[id]').slideUp();
     });
 });

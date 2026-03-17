@@ -18,453 +18,506 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+
+<style>
+
+</style>
+
 <body>
 
-    <!-- ------------nav-bar start ------------ -->
 
-   <!-- Navigation Bar -->
-    <nav class="navbar-austin">
-        <div class="header-container">
-
-            <div class="navbar-left">
-                <ul class="navbar-menu" id="navbarMenu">
-                    <li class="has-mega-menu">
-                        <div class="nav-item-wrapper">
-                            <a href="javascript:void(0);" class="active" id="inventoryMenuTrigger">Sales</a>
-                            <span class="mobile-toggle"><i class="fa fa-angle-down"></i></span>
-                        </div>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="javascript:void(0);">All Inventory</a></li>
-                            <li><a href="javascript:void(0);">New Boat Sales</a></li>
-                            <li><a href="javascript:void(0);">Pre-Owned Boat Sales</a></li>
-                            <li><a href="javascript:void(0);">Closeout Boats</a></li>
-
-                            <li><a href="javascript:void(0);">Vantage Boat Protection</a></li>
-                            <li><a href="javascript:void(0);">Consign/Trade Your Boat</a></li>
-                            <li><a href="javascript:void(0);">Get Financing</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-mega-menu">
-                        <div class="nav-item-wrapper">
-                            <a href="/service-storage" id="serviceMenuTrigger">Service</a>
-                            <span class="mobile-toggle"><i class="fa fa-angle-down"></i></span>
-                        </div>
-                        <ul class="mobile-sub-menu">
-                            <li><a href="/service-center">Service Center</a></li>
-                            <li><a href="/parts-department">Parts Department</a></li>
-                            <li><a href="/boat-storage">Boat Storage</a></li>
-                            <li><a href="/seasonal-slips">Seasonal Slips</a></li>
-                            <li><a href="/dock-hoists">Dock & Hoists</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="nav-item-wrapper">
-                            <a href="/pro-shop">Storage</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="nav-item-wrapper">
-                            <a href="javascript:void(0);">Fishing Depot</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-
-
-            <!-- Logo -->
-            <div class="navbar-logo">
-                <a href="/">
-                    <img src="./assets/images/mega-menu/austin-logo.png" alt="South Austin Marine Logo">
-                </a>
-            </div>
-
-
-            <!-- Right Side -->
-            <div class="navbar-right">
-
-                <!-- Location -->
-                <div class="navbar-location align-items-center" id="locationDropdownTrigger">
-                    <div class="search-icon">
-                        <i class="fa fa-search"></i>
-                    </div>
-                    <div class="navbar-location-text">
-                        <span class="navbar-location-label">Main Location</span>
-                        <span class="navbar-location-name" id="currentLocationName">(512) 892-2432</span>
-                    </div>
-
-                    <!-- Location Dropdown -->
-                    <div class="location-dropdown" id="locationDropdown">
-                        <div class="location-item selected" data-name="Canandaigua Showroom" data-label="Your Store">
-                            <div class="loc-header">
-                                <p><span>South Austin Marine</span> </p>
-                                <span class="loc-title">Main Location</span>
-                            </div>
-                            <div class="loc-details">
-                                5340 Highway 290, West Austin, TX, 78735
-                            </div>
-                            <div class="loc-phone">(512) 892-2432</div>
-                        </div>
-
-                        <div class="location-separator"></div>
-
-                        <div class="location-item" data-name="Canandaigua Marina" data-label="Your Store">
-                            <div>
-                                <span class="loc-title">Lakeside Location</span> <br>
-                                <span class="loc-phone-title">(512) 266-2225</span>
-                            </div>
-                            <span class="select-btn">Select</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- More Button -->
-                <button class="navbar-more-btn" id="moreMenuTrigger">
-                    <span>MORE</span>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Side Mega Menu -->
-    <div class="side-mega-menu" id="sideMegaMenu">
-        <div class="side-menu-content">
-            <ul class="side-menu-links primary">
-                <li><a href="javascript:void(0);">Wake Shop</a></li>
-                <li><a href="javascript:void(0);">Events</a></li>
-                <li><a href="javascript:void(0);">About Us</a></li>
-                <li><a href="javascript:void(0);">News & Articles</a></li>
-            </ul>
-
-            <ul class="side-menu-links secondary mt-5">
-                <li><a href="javascript:void(0);">Our Staff</a></li>
-                <li><a href="javascript:void(0);">Employment</a></li>
-                <li><a href="javascript:void(0);">Testimonials</a></li>
-                <li><a href="javascript:void(0);">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Inventory Mega Menu -->
-    <div class="inventory-mega-menu" id="inventoryMegaMenu">
-        <div class="header-container px-lg-5">
-            <div class="mega-menu-content">
-                <!-- Left Sidebar -->
-                <div class="mega-menu-sidebar">
-                    <ul class="mega-menu-links top-items">
-
-                        <li><a href="javascript:void(0);">All Inventory</a></li>
-                        <li><a href="javascript:void(0);">New Boat Sales</a></li>
-                        <li><a href="javascript:void(0);">Pre-Owned Boats</a></li>
-                        <li><a href="javascript:void(0);">Closeout Boats</a></li>
-                    </ul>
-                        <div class="srchby-size">
-                            <div class="h3-style">By Size</div>
-                            <div class="size-list">
-                                <p>10-19’</p>
-                            <p>20-29’</p>
-                            <p>30-39’</p>
-                            <p>40-49’</p>
-                        </div>
-                    </div>
-                    <ul class="mega-menu-links bottom-items">
-                        <li><a href="javascript:void(0);">Vantage Boat Protection</a></li>
-                        <li><a href="javascript:void(0);">Consign/Trade Your Boat</a></li>
-                        <li><a href="javascript:void(0);">Get Financing</a></li>
-                    </ul>
-
-                </div>
-
-                <!-- Right Content Area -->
-                <div class="mega-menu-brands">
-                    <div class="mega-menu-brands-grid">
-                        <!-- Brand Card 1 -->
-                        <a href="/inventory/lund" class="brand-card">
-                            <img src="./assets/images/mega-menu/avalon-img.png" alt="Lund Boats" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Avalon pontoons logo-wt 1.png" alt="Lund Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 2 -->
-                        <a href="/inventory/avalon" class="brand-card">
-                            <img src="./assets/images/mega-menu/formula-img.png" alt="Avalon Pontoons" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Formula-wt 1.png" alt="Avalon Logo" class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 3 -->
-                        <a href="/inventory/nautique" class="brand-card">
-                            <img src="./assets/images/mega-menu/moomba-img.png" alt="Nautique" class="brand-bg">
-                            <img src="./assets/images/mega-menu/moomba-logo-wt 1.png" alt="Nautique Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 4 -->
-                        <a href="/inventory/scout" class="brand-card">
-                            <img src="./assets/images/mega-menu/scb-img.png" alt="Scout" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Layer 2.png" alt="Scout Logo" class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 5 -->
-                        <a href="/inventory/regal" class="brand-card">
-                            <img src="./assets/images/mega-menu/blazer-img.png" alt="Regal" class="brand-bg">
-                            <img src="./assets/images/mega-menu/blazer_logo_wt 1.png" alt="Regal Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 6 -->
-                        <a href="/inventory/bennington" class="brand-card">
-                            <img src="./assets/images/mega-menu/pathfinder-img.png" alt="Bennington" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Pathfinder-logo-wt 1.png" alt="Bennington Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 7 -->
-                        <a href="/inventory/regulator" class="brand-card">
-                            <img src="./assets/images/mega-menu/hewes-img.png" alt="Regulator" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Heweslogo-wt-minimal 1.png" alt="Regulator Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 8 -->
-                        <a href="/inventory/honda-marine" class="brand-card">
-                            <img src="./assets/images/mega-menu/shallow-img.png" alt="Honda Marine" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Shallow_Sport_Logo 2.png" alt="Honda Marine Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 9 -->
-                        <a href="/inventory/honda-marine" class="brand-card">
-                            <img src="./assets/images/mega-menu/blackfin-img.png" alt="Honda Marine" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Blackfin-logo 1.png" alt="Honda Marine Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 9 -->
-                        <a href="/inventory/honda-marine" class="brand-card">
-                            <img src="./assets/images/mega-menu/meverik-img.png" alt="Honda Marine" class="brand-bg">
-                            <img src="./assets/images/mega-menu/maverick boats-wt-minimal 1.png" alt="Honda Marine Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 9 -->
-                        <a href="/inventory/honda-marine" class="brand-card">
-                            <img src="./assets/images/mega-menu/regal-img.png" alt="Honda Marine" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Regal_Logo-stacked-wt 1.png" alt="Honda Marine Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 9 -->
-                        <a href="/inventory/honda-marine" class="brand-card">
-                            <img src="./assets/images/mega-menu/montery-img.png" alt="Honda Marine" class="brand-bg">
-                            <img src="./assets/images/mega-menu/monterey logo 2024 - wt 1.png" alt="Honda Marine Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 9 -->
-                        <a href="/inventory/honda-marine" class="brand-card">
-                            <img src="./assets/images/mega-menu/supra-img.png" alt="Honda Marine" class="brand-bg">
-                            <img src="./assets/images/mega-menu/supra_logo-wt-sm 1.png" alt="Honda Marine Logo"
-                                class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 9 -->
-                        <a href="/inventory/honda-marine" class="brand-card">
-                            <img src="./assets/images/mega-menu/robalo-img.png" alt="Honda Marine" class="brand-bg">
-                            <img src="./assets/images/mega-menu/robalo-logo-png-transparent 2.png"
-                                alt="Honda Marine Logo" class="brand-logo">
-                        </a>
-
-                        <!-- Brand Card 9 -->
-                        <a href="/inventory/honda-marine" class="brand-card">
-                            <img src="./assets/images/mega-menu/vexus-img.png" alt="Honda Marine" class="brand-bg">
-                            <img src="./assets/images/mega-menu/Vexus-logo-wt 1.png" alt="Honda Marine Logo"
-                                class="brand-logo">
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Service & Storage Mega Menu -->
-    <div class="service-mega-menu" id="serviceMegaMenu">
-        <div class="container-desktop">
-            <div class="mega-menu-content align-items-center">
-
-                <!-- Right Content Area -->
-                <div class="mega-menu-brands">
-                    <div class="mega-menu-brands-grid service-grid">
-
-
-                        <a href="/service-center" class="service-card">
-                            <img src="./assets/images/mega-menu/service-icon.svg" alt="Service Center"
-                                class="service-bg">
-
-                            <div class="service-title">Service Center</div>
-                        </a>
-                        <a href="/service-center" class="service-card">
-                            <img src="./assets/images/mega-menu/Winterization-icon.svg" alt="Winterization"
-                                class="service-bg">
-
-                            <div class="service-title">Winterization</div>
-                        </a>
-                        <a href="/service-center" class="service-card">
-                            <img src="./assets/images/mega-menu/Storage-icon.svg" alt="Storage options"
-                                class="service-bg">
-
-                            <div class="service-title">Storage options</div>
-                        </a>
-                        <a href="/service-center" class="service-card">
-                            <img src="./assets/images/mega-menu/Rigging-icon.svg" alt="Rigging Shop" class="service-bg">
-
-                            <div class="service-title">Rigging Shop</div>
-                        </a>
-                        <a href="/service-center" class="service-card">
-                            <img src="./assets/images/mega-menu/Lakeside-icon.svg" alt="Lakeside Service"
-                                class="service-bg">
-
-                            <div class="service-title">Lakeside Service</div>
-                        </a>
-                        <a href="/service-center" class="service-card">
-                            <img src="./assets/images/mega-menu/Parts-icon.svg" alt="Parts Department"
-                                class="service-bg">
-
-                            <div class="service-title">Parts Department</div>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ------------nav-bar End ------------ -->
-
-    <!-- Hero Section -->
     <section class="hero-section">
         <div class="video-container">
-            <video autoplay muted loop playsinline>
-                <source src="./assets/videos/home-video/austin-header.mp4" type="video/mp4">
+            <video autoplay="" muted="" loop="" playsinline="">
+                <source src="./assets/videos/home-video/home-header-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div class="video-overlay"></div>
+
+            <div class="hero-content">
+                <div class="container-seager">
+                    <h1 class="home-title">Hewes Craft, North River and <br> Stabcraft's Largest Stocking Dealer</h1>
+
+                    <div class="banner-btns">
+                        <a id="home-new-boats-for-sale-btn" href="/new-boats-for-sale" class="blue-btn">New Boats
+                            For
+                            Sale</a>
+                        <a id="home-pre-owned-boats-btn" href="/used-pre-owned-boats-for-sale"
+                            class="blue-btn ">PRE-OWNED Boats</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hero-content">
-            <div class="container-seager">
-                <h1>Austin’s Anchor <br class="d-lg-block d-none">for All Things Boating.</h1>
-                <div>
-                    <a id="home-new-boats-for-sale-btn" href="javscript:void(0)" class="btn-global">New Boats For Sale</a>
+
+    </section>
+
+    <section class="home-brand-gallery">
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="/hewes-boats" class="home-brand-card d-block">
+                        <img src="./assets/images/home/brand-img-1.webp" alt="Hewes Boats Background"
+                            class="home-brand-bg">
+                        <div class="home-brand-overlay">
+                            <img src="./assets/images/home/mega-meneu-logo-1.webp" alt="Hewes Boats Logo"
+                                class="home-brand-logo-img">
+                        </div>
+                    </a>
                 </div>
-                <div>
-                    <a id="home-pre-owned-boats-btn" href="javscript:void(0)" class="btn-global mt-2">PRE-OWNED Boats</a>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="/north-river-boats" class="home-brand-card d-block">
+                        <img src="./assets/images/home/brand-img-2.webp" alt="North River Boats Background"
+                            class="home-brand-bg">
+                        <div class="home-brand-overlay">
+                            <img src="./assets/images/home/mega-meneu-logo-2.webp" alt="North River Boats Logo"
+                                class="home-brand-logo-img">
+                        </div>
+                    </a>
                 </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="/stabicraft-boats" class="home-brand-card d-block">
+                        <img src="./assets/images/home/brand-img-3.webp" alt="Stabicraft Boats Background"
+                            class="home-brand-bg">
+                        <div class="home-brand-overlay">
+                            <img src="./assets/images/home/mega-meneu-logo-3.webp" alt="Stabicraft Boats Logo"
+                                class="home-brand-logo-img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="/alumaweld-boats" class="home-brand-card d-block">
+                        <img src="./assets/images/home/brand-img-4.webp" alt="Alumaweld Boats Background"
+                            class="home-brand-bg">
+                        <div class="home-brand-overlay">
+                            <img src="./assets/images/home/mega-meneu-logo-4.webp" alt="Alumaweld Boats Logo"
+                                class="home-brand-logo-img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="/godfrey-boats" class="home-brand-card d-block">
+                        <img src="./assets/images/home/brand-img-5.webp" alt="Godfrey Boats Background"
+                            class="home-brand-bg">
+                        <div class="home-brand-overlay">
+                            <img src="./assets/images/home/mega-meneu-logo-5.webp" alt="Godfrey Boats Logo"
+                                class="home-brand-logo-img">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="/pro-steelheader-boats" class="home-brand-card d-block">
+                        <img src="./assets/images/home/brand-img-6.webp" alt="Pro-Steelheader Boats Background"
+                            class="home-brand-bg">
+                        <div class="home-brand-overlay">
+                            <img src="./assets/images/home/mega-meneu-logo-6.webp" alt="Pro-Steelheader Boats Logo"
+                                class="home-brand-logo-img">
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
 
- <section class="brand-carousel-section py-5">
+    <div class="arrival-boats-header">
+        <h3 class="title-heading-lg">New Arrivals</h3>
+    </div>
+
     <div class="container-fluid">
-        <div class="owl-carousel brand-carousel">
+        <div class="row">
+            <div class="col-xl-11 mx-auto">
 
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/Avalon pontoons logo-blk 1.png" alt="Avalon">
-                </a>
+                <div class="home-inventory-box">
+
+                    <div class="home-inventory-cards">
+
+                        <div class="arrival-boat-card-img">
+                            <a href="/new-boats-for-sale-detail/sample-boat-1">
+                                <img src="./assets/images/dummy.png" class="boat-img" alt="Sample Boat 1">
+                            </a>
+                        </div>
+
+                        <div class="grid-boat-content-box">
+                            <div class="grid-upper-content-box">
+                                <div class="grid-sm-box-1">
+
+                                    <h2 class="grid-boat-title">
+                                        <a href="/new-boats-for-sale-detail/sample-boat-1">
+                                            2025 Sample Boat Model
+                                        </a>
+                                    </h2>
+
+                                    <div class="grid-boat-condition-box">
+
+                                        <div class="grid-price-box">
+                                            <ul>
+                                                <li class="grid-price-item">$45,000</li>
+                                                <li class="grid-price-item">$350/mo*</li>
+                                            </ul>
+                                        </div>
+
+                                        <ul class="grid-boat-condition-list">
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/boat-details-icon/condition.png"
+                                                    alt="Condition">
+                                                New
+                                            </li>
+
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-1.png"
+                                                    alt="Length">
+                                                24'
+                                            </li>
+
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-3.png"
+                                                    alt="Engine Hours">
+                                                10 hrs
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-inventory-cards">
+
+                        <div class="arrival-boat-card-img">
+                            <a href="/new-boats-for-sale-detail/sample-boat-1">
+                                <img src="./assets/images/dummy.png" class="boat-img" alt="Sample Boat 1">
+                            </a>
+                        </div>
+
+                        <div class="grid-boat-content-box">
+                            <div class="grid-upper-content-box">
+                                <div class="grid-sm-box-1">
+
+                                    <h2 class="grid-boat-title">
+                                        <a href="/new-boats-for-sale-detail/sample-boat-1">
+                                            2025 Sample Boat Model
+                                        </a>
+                                    </h2>
+
+                                    <div class="grid-boat-condition-box">
+
+                                        <div class="grid-price-box">
+                                            <ul>
+                                                <li class="grid-price-item">$45,000</li>
+                                                <li class="grid-price-item">$350/mo*</li>
+                                            </ul>
+                                        </div>
+
+                                        <ul class="grid-boat-condition-list">
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/boat-details-icon/condition.png"
+                                                    alt="Condition">
+                                                New
+                                            </li>
+
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-1.png"
+                                                    alt="Length">
+                                                24'
+                                            </li>
+
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-3.png"
+                                                    alt="Engine Hours">
+                                                10 hrs
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-inventory-cards">
+
+                        <div class="arrival-boat-card-img">
+                            <a href="/new-boats-for-sale-detail/sample-boat-1">
+                                <img src="./assets/images/dummy.png" class="boat-img" alt="Sample Boat 1">
+                            </a>
+                        </div>
+
+                        <div class="grid-boat-content-box">
+                            <div class="grid-upper-content-box">
+                                <div class="grid-sm-box-1">
+
+                                    <h2 class="grid-boat-title">
+                                        <a href="/new-boats-for-sale-detail/sample-boat-1">
+                                            2025 Sample Boat Model
+                                        </a>
+                                    </h2>
+
+                                    <div class="grid-boat-condition-box">
+
+                                        <div class="grid-price-box">
+                                            <ul>
+                                                <li class="grid-price-item">$45,000</li>
+                                                <li class="grid-price-item">$350/mo*</li>
+                                            </ul>
+                                        </div>
+
+                                        <ul class="grid-boat-condition-list">
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/boat-details-icon/condition.png"
+                                                    alt="Condition">
+                                                New
+                                            </li>
+
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-1.png"
+                                                    alt="Length">
+                                                24'
+                                            </li>
+
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-3.png"
+                                                    alt="Engine Hours">
+                                                10 hrs
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-inventory-cards">
+
+                        <div class="arrival-boat-card-img">
+                            <a href="/new-boats-for-sale-detail/sample-boat-1">
+                                <img src="./assets/images/dummy.png" class="boat-img" alt="Sample Boat 1">
+                            </a>
+                        </div>
+
+                        <div class="grid-boat-content-box">
+                            <div class="grid-upper-content-box">
+                                <div class="grid-sm-box-1">
+
+                                    <h2 class="grid-boat-title">
+                                        <a href="/new-boats-for-sale-detail/sample-boat-1">
+                                            2025 Sample Boat Model
+                                        </a>
+                                    </h2>
+
+                                    <div class="grid-boat-condition-box">
+
+                                        <div class="grid-price-box">
+                                            <ul>
+                                                <li class="grid-price-item">$45,000</li>
+                                                <li class="grid-price-item">$350/mo*</li>
+                                            </ul>
+                                        </div>
+
+                                        <ul class="grid-boat-condition-list">
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/boat-details-icon/condition.png"
+                                                    alt="Condition">
+                                                New
+                                            </li>
+
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-1.png"
+                                                    alt="Length">
+                                                24'
+                                            </li>
+
+                                            <li class="specs-list-item">
+                                                <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-3.png"
+                                                    alt="Engine Hours">
+                                                10 hrs
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SIMILAR SLIDER -->
+                <div class="owl-carousel similar-slider owl-theme">
+
+                    <div class="item">
+                        <div class="grid-boat-card grid-view">
+
+                            <div class="grid-boat-img-box">
+                                <div class="boat-card-img">
+                                    <a href="/new-boats-for-sale-detail/sample-boat-2">
+                                        <img src="./assets/images/boat3.jpg" class="boat-img" alt="Sample Boat 2">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="grid-boat-content-box">
+                                <div class="grid-upper-content-box">
+                                    <div class="grid-sm-box-1">
+
+                                        <h2 class="grid-boat-title">
+                                            <a href="/new-boats-for-sale-detail/sample-boat-2">
+                                                2024 Another Boat Model
+                                            </a>
+                                        </h2>
+
+                                        <div class="grid-boat-condition-box">
+
+                                            <div class="grid-price-box">
+                                                <ul>
+                                                    <li class="grid-price-item">$32,000</li>
+                                                    <li class="grid-price-item">$250/mo*</li>
+                                                </ul>
+                                            </div>
+
+                                            <ul class="grid-boat-condition-list">
+                                                <li class="specs-list-item">
+                                                    <img src="https://cdn.mdsbrand.com/madis/assets/images/boat-details-icon/condition.png"
+                                                        alt="Condition">
+                                                    Used
+                                                </li>
+
+                                                <li class="specs-list-item">
+                                                    <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-1.png"
+                                                        alt="Length">
+                                                    20'
+                                                </li>
+
+                                                <li class="specs-list-item">
+                                                    <img src="https://cdn.mdsbrand.com/madis/assets/images/listing images/specs-list-img-3.png"
+                                                        alt="Engine Hours">
+                                                    120 hrs
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END SLIDER -->
+
             </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/formula.png" alt="Formula">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/moomba.png" alt="Moomba">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/SCB_Logo 1.svg" alt="SCB Boats">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/bennigton.jpg" alt="Bennington">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/pathfinder.png" alt="Pathfinder">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/hewes.png" alt="Hewes">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/Shallow_Sport_Logo 1.svg" alt="Shallow Sport">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/blackfin.png" alt="Blackfin">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/meverik.png" alt="Maverick">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/regal.png" alt="Regal">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/montery.png" alt="Monterey">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/supra.jpg" alt="Supra">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/robalo.png" alt="Robalo">
-                </a>
-            </div>
-
-            <div class="brand-item">
-                <a href="javascript:void(0);">
-                    <img src="./assets/images/home/blazer-boats.jpg" alt="Blazer Boats">
-                </a>
-            </div>
-
         </div>
     </div>
-</section>
+
+    <section class="brand-carousel-section py-5">
+        <div class="container-fluid">
+            <div class="owl-carousel brand-carousel">
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/Avalon pontoons logo-blk 1.png" alt="Avalon">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/formula.png" alt="Formula">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/moomba.png" alt="Moomba">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/SCB_Logo 1.svg" alt="SCB Boats">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/bennigton.jpg" alt="Bennington">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/pathfinder.png" alt="Pathfinder">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/hewes.png" alt="Hewes">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/Shallow_Sport_Logo 1.svg" alt="Shallow Sport">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/blackfin.png" alt="Blackfin">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/meverik.png" alt="Maverick">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/regal.png" alt="Regal">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/montery.png" alt="Monterey">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/supra.jpg" alt="Supra">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/robalo.png" alt="Robalo">
+                    </a>
+                </div>
+
+                <div class="brand-item">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/home/blazer-boats.jpg" alt="Blazer Boats">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <section class="hero-banner slider-section">
         <div id="heroCarousel" class="carousel slide" data-ride="carousel">
@@ -522,7 +575,7 @@
         <div class="austin-lg-container">
             <div class="austin-featured-box reverse-col">
 
-            <div class="austin-featured-col">
+                <div class="austin-featured-col">
                     <div class="austin-featured-img">
                         <img src="./assets/images/home/welcome-vid-img.png" alt="South Austin Marine">
                     </div>
@@ -613,7 +666,8 @@
                             for time on the water.
                         </p>
                         <div class="hero-actions">
-                            <a id="home-fishing-depot-btn" href="javscript:void(0)" class="btn-global-outline">FISHING DEPOT</a>
+                            <a id="home-fishing-depot-btn" href="javscript:void(0)" class="btn-global-outline">FISHING
+                                DEPOT</a>
                         </div>
                     </div>
                 </div>
@@ -636,7 +690,8 @@
                             keeping every boat performing at its best on the water.</p>
 
                         <div class="mt-4 mt-lg-5 sec-btn">
-                            <a id="home-service-info-requests-btn" href="/about" class="btn-global-rd">Service INFO & Requests</a>
+                            <a id="home-service-info-requests-btn" href="/about" class="btn-global-rd">Service INFO &
+                                Requests</a>
                         </div>
                     </div>
                 </div>
@@ -665,7 +720,8 @@
                             Shop a wide selection of new and pre-owned boats backed by expert guidance and trusted
                             brands.
                         </p>
-                        <a id="home-go-to-listings-btn" href="/inventory/new-boat-sales" class="card-btn">Go To Listings ></a>
+                        <a id="home-go-to-listings-btn" href="/inventory/new-boat-sales" class="card-btn">Go To Listings
+                            ></a>
                     </div>
                 </div>
 
@@ -677,7 +733,8 @@
                         <p class="card-desc">
                             Protect your investment year-round with secure indoor and outdoor storage options.
                         </p>
-                        <a id="home-storage-options-requests-btn" href="/inventory/pre-owned-boat-sales" class="card-btn">Storage Options & Requests ></a>
+                        <a id="home-storage-options-requests-btn" href="/inventory/pre-owned-boat-sales"
+                            class="card-btn">Storage Options & Requests ></a>
                     </div>
                 </div>
 
@@ -707,11 +764,11 @@
                     <div class="feature-card p-md-0">
                         <div class="bottom-card-img">
                             <a href="javascript:void(0);">
-                                <img src="./assets/images/home/sell-trade.png" alt="Sell or Trade Your Boat at South Austin Marine"
-                            class="feature-img w-100">
+                                <img src="./assets/images/home/sell-trade.png"
+                                    alt="Sell or Trade Your Boat at South Austin Marine" class="feature-img w-100">
                             </a>
                         </div>
-                        
+
                         <h3 class="feature-title">
                             <a href="javascript:void(0);">Sell/Trade Your Boat</a>
                         </h3>
@@ -727,13 +784,13 @@
                         <div class="bottom-card-img">
                             <a href="javascript:void(0);">
                                 <img src="./assets/images/home/get-financing.png" alt="Get Financing for Your Boat"
-                            class="feature-img w-100">
+                                    class="feature-img w-100">
                             </a>
                         </div>
-                        
+
                         <h3 class="feature-title"><a href="javascript:void(0);">
-                            Get Financing
-                        </a></h3>
+                                Get Financing
+                            </a></h3>
                         <p class="feature-text">Our flexible financing options make owning your next boat easier than
                             ever, offering competitive rates, trusted lending partners, and a smooth approval process
                             tailored to your needs.</p>
@@ -745,7 +802,8 @@
                     <div class="feature-card p-md-0">
                         <div class="bottom-card-img">
                             <a href="javascript:void(0);">
-                                <img src="./assets/images/home/events.png" alt="South Austin Marine Events" class="feature-img w-100">
+                                <img src="./assets/images/home/events.png" alt="South Austin Marine Events"
+                                    class="feature-img w-100">
                             </a>
                         </div>
                         <h3 class="feature-title">
