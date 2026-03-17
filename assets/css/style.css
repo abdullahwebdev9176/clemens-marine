@@ -2496,6 +2496,122 @@ footer {
   width: calc(100% / 4 - 10px);
 }
 
+.services-links-section {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.services-links-grid {
+  display: flex;
+  gap: 8px;
+}
+
+.service-link-card {
+  width: calc(100% / 3 - 4px);
+  position: relative;
+  display: block;
+  height: 880px;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.service-link-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0 78px 64px 78px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.service-card-title {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 52px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.fishing-depot-hero {
+  background: url(../images/home/fishing-depot.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-banner .hero-content-wrapper {
+  background: var(--Aqua);
+  padding: 80px 40px;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--Wt);
+}
+
+.welcome-img {
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-banner .hero-title {
+  color: var(--white, #FFF);
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 52px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.welcome-banner .hero-description {
+  margin-bottom: 40px;
+  color: var(--white);
+}
+
+.hero-text-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 100px;
+  text-align: left;
+}
+.welcome-banner {
+    width: calc(100% - 10%);
+    margin: 0 auto;
+}
+
+
+
 @media (max-width: 1600px) {
   .location-dropdown-item {
     padding-left: 40px;
