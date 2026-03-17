@@ -1936,6 +1936,9 @@ footer {
   padding: 7px 9px;
   line-height: normal;
   background-color: var(--Blackish);
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .footer-col-1 {
@@ -2782,8 +2785,62 @@ footer {
   line-height: 24px;
 }
 
+.wallOfFameImageWrap {
+  position: relative;
+  padding-top: 95%;
+}
 
+.wallOfFameImageWrap img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.wallOfFameSection .headingWrap {
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+
+.wall-subtitle {
+  color: #000;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.wallOfFameSection .social-icons a {
+  background: var(--Aqua);
+  border: 1px solid var(--Aqua);
+}
+
+.wallOfFameTitle {
+  color: #000;
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 52px;
+  text-transform: lowercase;
+}
+.memoriesCarousel .item{
+  position: relative;
+  padding-top: 101%;
+}
+.memoriesCarousel .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Responsive Tweaks */
 @media (max-width: 767px) {
 

@@ -80,7 +80,29 @@ $(document).ready(function () {
             }
         });
     }
+
+    $(".memoriesCarousel").length && $(".memoriesCarousel").owlCarousel({
+        loop: !0,
+        margin: 8,
+        nav: !1,
+        dots: !1,
+        responsive: {
+            0: {
+                items: 3,
+                margin: 4
+            },
+            600: {
+                items: 3
+            },
+            767: {
+                items: 5
+            }
+        }
+    })
+
 });
+
+
 
 $(document).ready(function () {
 
