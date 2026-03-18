@@ -3262,7 +3262,14 @@ footer {
   text-decoration: none;
   background: transparent;
 }
+/* service page css start here */
 
+.service-featured-col{
+  background-image: url('../images/service/service-pattern.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
 /* Responsive Scaling */
