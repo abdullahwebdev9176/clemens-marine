@@ -1397,6 +1397,7 @@ p {
   font-weight: 300;
   line-height: 52px;
   text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .clemens-lg-container .clemens-featured-col .content-box {
@@ -2949,6 +2950,274 @@ letter-spacing: 1px;
 .marina-location-info{
   padding: 24px 20px 43px 20px;
 }
+
+/* sell trade page css start here */
+
+/* sell trade page css start here */
+
+.sell-trade-feature-card {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sell-trade-icon-box {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background-color: #C74D41;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.sell-trade-icon-element {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.sell-trade-content-box {
+  flex-grow: 1;
+}
+
+.sell-trade-feature-heading {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.sell-trade-intro-box {
+  background-color: #F9F9F9;
+  padding: 40px 60px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sell-trade-intro-text {
+  color: var(--Blk, #000);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.sell-trade-highlight-red {
+  color: #C74D41;
+}
+
+.sell-trade-highlight-bold {
+  color: #000;
+  font-weight: 700;
+}
+
+.sell-trade-btn-wrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.process-section {
+  background-color: #00386E;
+  padding: 80px 0;
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+}
+
+.process-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  height: 100%;
+  color: #333;
+  position: relative;
+}
+
+.process-number-badge {
+  width: 40px;
+  height: 40px;
+  background-color: #C74D41;
+  color: var(--Wt, #FFF);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.process-card-title {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.process-cta-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.process-cta-text {
+  margin-bottom: 40px;
+}
+
+.consignment-section {
+  padding: 80px 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: #ffffff;
+}
+
+.consignment-feature-row {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.consignment-icon-box {
+  width: 56px;
+  height: 56px;
+  background-color: #C74D41;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.consignment-feature-title {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.consignment-divider {
+  border-top: 1px solid var(--gray-color);
+  margin: 30px 0;
+  height: 1px;
+  width: 100%;
+}
+
+.consignment-bottom-text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.consignment-check-icon {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.consignment-bottom-text strong {
+  font-weight: 800;
+}
+
+.consignment-valuation-btn {
+  background-color: #00386E;
+  color: #ffffff;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.3s;
+  font-family: 'gotham-bold', sans-serif;
+}
+
+.consignment-valuation-btn:hover {
+  color: #ffffff;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.trade-banner {
+  position: relative;
+  padding-top: 32%;
+  min-height: 350px;
+}
+
+.trade-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ready-to-sell-section {
+  background-image: url('/assets/images/sell-trade/sell-trade-img-3.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+  position: relative;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+}
+
+.ready-to-sell-content-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ready-to-sell-link {
+  display: inline-block;
+  padding: 13px 28px;
+  color: #C74D41;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+}
+
+.ready-to-sell-link:hover {
+  color: #C74D41;
+  text-decoration: none;
+  background: transparent;
+}
+
+
+
 /* Responsive Scaling */
 @media (max-width: 991px) {
   .marina-title-white {
