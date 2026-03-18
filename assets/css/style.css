@@ -465,8 +465,8 @@ p {
 
 .clemens-featured-box {
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .clemens-featured-col .content-box {
@@ -1359,12 +1359,6 @@ p {
   background-repeat: no-repeat;
 }
 
-.clemens-featured-box {
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 .clemens-featured-col .content-box {
   padding-bottom: 30px;
   padding-top: 30px;
@@ -1929,7 +1923,7 @@ footer {
 }
 
 .social-icons a {
-  display: inline-block;
+  display: inline-flex;
   margin: 0 5px;
   color: var(--white);
   font-size: 16px;
@@ -1940,6 +1934,8 @@ footer {
   width: 40px;
   height: 40px;
   flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-col-1 {
@@ -2845,9 +2841,10 @@ footer {
   object-fit: cover;
 }
 
-.wallOfFameSection{
+.wallOfFameSection {
   padding-bottom: 40px;
 }
+
 .marina-locations {
   background-color: #1a1a1a;
   background-image: url('../images/home-pattern.webp');
@@ -2863,18 +2860,20 @@ footer {
 }
 
 .marina-subtitle-gray {
- color: var(--white, #FFF);
-text-align: center;
-font-family: Lato;
-font-size: 18px;
-font-style: normal;
-font-weight: 300;
-line-height: 26px;
-letter-spacing: 1px;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 1px;
 }
-.marina-locations-header{
+
+.marina-locations-header {
   margin-bottom: 30px;
 }
+
 /* Card Styling */
 .marina-location-card {
   background-color: #ffffff;
@@ -2947,7 +2946,8 @@ letter-spacing: 1px;
 .marina-address a:hover {
   color: var(--Blackish, #221F20);
 }
-.marina-location-info{
+
+.marina-location-info {
   padding: 24px 20px 43px 20px;
 }
 
@@ -2964,7 +2964,7 @@ letter-spacing: 1px;
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  background-color: #C74D41;
+  background-color: var(--Aqua);
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -2981,14 +2981,19 @@ letter-spacing: 1px;
   flex-grow: 1;
 }
 
+.experties-sec {
+  background-color: #d9d9d92b;
+  padding: 72px 0 34px 0;
+  margin-top: 32px;
+}
+
 .sell-trade-feature-heading {
-  color: var(--Blk, #000);
-  font-family: Manrope;
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
   font-size: 24px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
 }
 
 .sell-trade-intro-box {
@@ -3015,7 +3020,7 @@ letter-spacing: 1px;
 }
 
 .sell-trade-highlight-red {
-  color: #C74D41;
+  color: var(--Aqua);
 }
 
 .sell-trade-highlight-bold {
@@ -3047,7 +3052,7 @@ letter-spacing: 1px;
 .process-number-badge {
   width: 40px;
   height: 40px;
-  background-color: #C74D41;
+  background-color: var(--Aqua);
   color: var(--Wt, #FFF);
   font-family: Manrope;
   font-size: 18px;
@@ -3097,7 +3102,7 @@ letter-spacing: 1px;
 .consignment-icon-box {
   width: 56px;
   height: 56px;
-  background-color: #C74D41;
+  background-color: var(--Aqua);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -3196,7 +3201,7 @@ letter-spacing: 1px;
 .ready-to-sell-link {
   display: inline-block;
   padding: 13px 28px;
-  color: #C74D41;
+  color: var(--Aqua);
   text-align: center;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -3211,7 +3216,7 @@ letter-spacing: 1px;
 }
 
 .ready-to-sell-link:hover {
-  color: #C74D41;
+  color: var(--Aqua);
   text-decoration: none;
   background: transparent;
 }
