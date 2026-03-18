@@ -470,6 +470,10 @@ p {
   line-height: 24px;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 .clemens-featured-box {
   display: flex;
   padding-top: 32px;
@@ -2459,10 +2463,14 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .grid-price-box {
-  height: 45px;
+  height: 32px;
 }
 
 .grid-price-box ul {
@@ -2585,16 +2593,16 @@ footer {
 
 .services-links-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
 }
 
 .service-link-card {
-  width: calc(100% / 3 - 4px);
+  width: calc(100% / 3 - 6px);
   position: relative;
+  padding-top: 41%;
   display: block;
-  height: 880px;
-  overflow: hidden;
-  border-radius: 0;
 }
 
 .service-link-card::before {
@@ -2609,6 +2617,9 @@ footer {
 }
 
 .service-link-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2804,6 +2815,14 @@ footer {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.marina-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 }
 
 .wallOfFameImageWrap {
@@ -3248,6 +3267,22 @@ footer {
 
 /* Responsive Scaling */
 @media (max-width: 991px) {
+  .welcome-banner .hero-content-wrapper {
+    padding: 0px 40px;
+  }
+
+  .marina-content-col {
+    text-align: center;
+  }
+
+  .service-link-card {
+    width: calc(100% / 2 - 4px);
+  }
+
+  .marina-action-group {
+    justify-content: center;
+  }
+
   .common-header {
     margin-bottom: 0;
   }
@@ -3275,6 +3310,10 @@ footer {
 
 /* Responsive Tweaks */
 @media (max-width: 767px) {
+  .marina-heading-blue {
+    font-size: 35px;
+    line-height: 42px;
+  }
 
   .marina-hero-trade,
   .marina-hero-overlay {
@@ -3313,6 +3352,39 @@ footer {
 }
 
 @media (max-width: 1600px) {
+  .title-heading-lg {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .service-card-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .marina-heading-blue {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .welcome-banner .hero-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .hero-text-content {
+    padding: 40px 60px;
+  }
+
+  .marina-inventory {
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
+
+  .marina-locations {
+    padding: 65px 0 80px 0;
+  }
+
   .location-dropdown-item {
     padding-left: 40px;
   }
@@ -3354,6 +3426,17 @@ footer {
 }
 
 @media (max-width: 1500px) {
+
+  .marina-hero-trade,
+  .marina-hero-overlay {
+    min-height: 700px;
+  }
+
+  .arrival-boats-header {
+    padding-bottom: 25px;
+    padding-top: 50px;
+  }
+
   .featured-bold-title {
     font-size: 35px;
     line-height: 43px;
@@ -3403,6 +3486,18 @@ footer {
 }
 
 @media screen and (max-width: 1440px) {
+  .service-link-card::before {
+    height: 300px;
+  }
+
+  .card-overlay {
+    padding: 0 50px 50px 50px;
+  }
+
+  .hero-text-content {
+    padding: 40px 30px;
+  }
+
   .home-brand-logo-img {
     max-width: 200px;
   }
@@ -3440,6 +3535,37 @@ footer {
 
 
 @media screen and (max-width: 1200px) {
+  .welcome-banner .hero-title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .marina-hero-trade,
+  .marina-hero-overlay {
+    min-height: 600px;
+  }
+
+  .home-inventory-cards {
+    width: 100%;
+  }
+
+  .card-overlay {
+    padding: 0 25px 40px 25px;
+  }
+
+  .hero-text-content {
+    padding: 40px 0;
+  }
+
+  .marina-locations {
+    padding: 60px 0 50px 0;
+  }
+
+  .wallOfFameSection .headingWrap {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
   .clemens-medium-container {
     max-width: calc(100% - 5%);
   }
@@ -3538,6 +3664,10 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+  .service-link-card {
+    padding-top: 62%;
+  }
+
   .clemens-medium-container {
     max-width: 100%;
     padding-left: 25px;
@@ -3731,6 +3861,20 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .service-link-card {
+    padding-top: 124%;
+  }
+
+  .marina-hero-trade,
+  .marina-hero-overlay {
+    min-height: unset;
+  }
+
+  .marina-hero-trade {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .hero-content .home-title {
     font-size: 30px;
     line-height: 37px;
@@ -3751,9 +3895,42 @@ footer {
     width: 40px;
     height: 40px;
   }
+
+  .service-link-card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
+  .welcome-banner .hero-content-wrapper {
+    padding: 0px 30px;
+  }
+
+  .service-card-title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .wallOfFameTitle {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .title-heading-lg {
+    font-size: 35px;
+    line-height: 42px
+  }
+
+  .marina-heading-blue {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .welcome-banner .hero-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   .banner-btns {
     gap: 10px;
   }

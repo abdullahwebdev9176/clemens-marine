@@ -88,14 +88,39 @@ $(document).ready(function () {
         dots: !1,
         responsive: {
             0: {
+                items: 2,
+                margin: 4
+            },
+            500: {
                 items: 3,
                 margin: 4
             },
             600: {
                 items: 3
             },
-            767: {
+             900: {
+                items: 4
+            },
+            1200: {
                 items: 5
+            }
+        }
+    })
+
+    $(".arrival-invetory-slider").length && $(".arrival-invetory-slider").owlCarousel({
+        loop: !0,
+        margin: 8,
+        nav: !1,
+        dots: !1,
+        responsive: {
+            0: {
+                items: 1
+            },
+            800: {
+                items: 2
+            },
+            767: {
+                items: 3
             }
         }
     })
