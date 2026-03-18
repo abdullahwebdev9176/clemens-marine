@@ -1308,7 +1308,19 @@ ul {
 }
 
 /* brand page css start here */
-
+.inven-sec-header {
+    padding-top: 64px;
+    padding-bottom: 40px;
+}
+.inventory-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 108px;
+}
+.inventory-card {
+    width: calc(100% / 3);
+    padding: 7px;
+}
 .brand-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -3367,6 +3379,9 @@ footer {
 
 /* Responsive Scaling */
 @media (max-width: 991px) {
+  .inventory-card {
+        width: calc(100% / 2);
+    }
   .welcome-banner .hero-content-wrapper {
     padding: 0px 40px;
   }
@@ -3410,6 +3425,9 @@ footer {
 
 /* Responsive Tweaks */
 @media (max-width: 767px) {
+      .inventory-card {
+        width: 100%;
+    }
   .marina-heading-blue {
     font-size: 35px;
     line-height: 42px;
