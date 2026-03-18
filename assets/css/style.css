@@ -211,6 +211,18 @@ a:hover {
   text-decoration: none;
 }
 
+.simple-btn {
+  color: var(--Aqua, #007AA9);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px;
+  /* 125% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
 .blue-btn {
   padding: 14px 28px;
   color: var(--white, #fff);
@@ -3262,15 +3274,96 @@ footer {
   text-decoration: none;
   background: transparent;
 }
+
 /* service page css start here */
 
-.service-featured-col{
+.service-featured-col {
   background-image: url('../images/service/service-pattern.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+/* Sidebar Styles */
+.services-sidebar {
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+.service-content {
+  padding: 0 25px 0 60px;
+}
+
+.services-tabs .list-group-item {
+  border: 2px solid var(--Light-Gray---D9, #D9D9D9);
+  background: var(--white, #FFF);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Blackish);
+  font-weight: 500;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 0;
+}
+
+.services-tabs .list-group-item.active {
+  border: 2px solid var(--Aqua, #007AA9);
+  background: var(--white, #FFF);
+  color: #17a2b8;
+}
+
+.services-tabs .list-group-item.active .arrow-icon {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(71%) saturate(6716%) hue-rotate(177deg) brightness(89%) contrast(103%);
+}
+
+.service-tab-img {
+  position: relative;
+  padding-top: 50%;
+}
+
+.service-tab-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tabs-header {
+  color: var(--Blackish, #221F20);
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 28px;
+}
+
+/* Mobile specific styling */
+@media (max-width: 991.98px) {
+  .service-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-bottom: 15px;
+  }
+
+  .services-tabs .list-group-item {
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
+
+  .service-content {
+    margin-bottom: 0;
+  }
+}
 
 /* Responsive Scaling */
 @media (max-width: 991px) {
@@ -3433,6 +3526,9 @@ footer {
 }
 
 @media (max-width: 1500px) {
+  .service-content {
+    padding: 0 25px 0 30px;
+  }
 
   .marina-hero-trade,
   .marina-hero-overlay {
@@ -3493,6 +3589,10 @@ footer {
 }
 
 @media screen and (max-width: 1440px) {
+  .services-sidebar {
+    margin-right: 0;
+  }
+
   .service-link-card::before {
     height: 300px;
   }
@@ -3542,6 +3642,10 @@ footer {
 
 
 @media screen and (max-width: 1200px) {
+  .service-content {
+    padding: 0;
+  }
+
   .welcome-banner .hero-title {
     font-size: 35px;
     line-height: 42px;
@@ -3673,6 +3777,10 @@ footer {
 @media screen and (max-width: 991px) {
   .service-link-card {
     padding-top: 62%;
+  }
+
+  .service-content {
+    padding: 20px;
   }
 
   .clemens-medium-container {
@@ -3909,6 +4017,11 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .service-content .title-heading-lg {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
   .welcome-banner .hero-content-wrapper {
     padding: 0px 30px;
   }

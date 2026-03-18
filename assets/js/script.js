@@ -98,7 +98,7 @@ $(document).ready(function () {
             600: {
                 items: 3
             },
-             900: {
+            900: {
                 items: 4
             },
             1200: {
@@ -171,4 +171,49 @@ $(document).ready(function () {
     $('.close-mega-menu').on('click', function () {
         $(this).closest('div[id]').slideUp();
     });
+});
+
+$(document).ready(function () {
+    function handleResponsiveLayout() {
+        const isMobile = $(window).width() < 992;
+
+        $('.service-content').each(function () {
+            const targetId = $(this).attr('id');
+            const parentTab = $('[data-target="' + targetId + '"]');
+
+            if (isMobile) {
+                // Move content directly after its corresponding tab button
+                $(this).insertAfter(parentTab);
+                // Show content if tab is active, hide otherwise
+                $(this).toggleClass('d-none', !parentTab.hasClass('active'));
+            } else {
+                // Move content back to the right-side wrapper
+                $(this).appendTo('#contentWrapper');
+                // On desktop, keep d-none unless active
+                $(this).toggleClass('d-none', !parentTab.hasClass('active'));
+            }
+        });
+    }
+
+    // Tab Click Event
+    $('.services-tabs .list-group-item').on('click', function () {
+        const target = $(this).data('target');
+
+        // Update Active States
+        $('.services-tabs .list-group-item').removeClass('active');
+        $(this).addClass('active');
+
+        // Toggle Content
+        $('.service-content').addClass('d-none');
+        $('#' + target).removeClass('d-none');
+
+        // Re-run placement for mobile visibility
+        if ($(window).width() < 992) {
+            handleResponsiveLayout();
+        }
+    });
+
+    // Run on load and resize
+    $(window).on('resize', handleResponsiveLayout);
+    handleResponsiveLayout();
 });
