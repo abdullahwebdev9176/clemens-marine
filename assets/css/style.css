@@ -1633,7 +1633,7 @@ ul {
   padding: 0 15px;
 }
 
-.row .col-md-3:last-child .robalo-lineup-item {
+.robalo-lineup-item:last-child {
   border-right: none;
 }
 
@@ -3104,7 +3104,7 @@ footer {
 }
 
 .process-section {
-  padding: 80px 0;
+  padding: 64px 0 72px 0;
   background-image: url('../images/home-pattern.webp');
   background-size: cover;
 }
@@ -4050,6 +4050,15 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .robalo-lineup-item {
+    padding: 30px 15px;
+}
+  .brand-border {
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
   .service-content .title-heading-lg {
     font-size: 25px;
     line-height: 30px;
