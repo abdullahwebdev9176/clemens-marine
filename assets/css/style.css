@@ -883,7 +883,7 @@ ul {
 /* contact page css start here */
 
 .contact-form-section {
-  margin-top: -70px;
+  margin-top: -100px;
 }
 
 .location-items-list {
@@ -1395,6 +1395,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 76px;
 }
 
 .clemens-featured-col .content-box {
@@ -3985,6 +3986,19 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .central-title {
+    margin-bottom: 15px;
+  }
+
+  .about-location-section {
+    padding-bottom: 40px;
+  }
+
+  .location-header {
+    padding-top: 40px;
+    margin-top: 20px;
+  }
+
   .inventory-card {
     width: 100%;
   }
@@ -4052,13 +4066,15 @@ footer {
 @media (max-width: 576px) {
   .robalo-lineup-item {
     padding: 30px 15px;
-}
+  }
+
   .brand-border {
     border-right: none;
     border-left: none;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-}
+  }
+
   .service-content .title-heading-lg {
     font-size: 25px;
     line-height: 30px;
