@@ -1250,8 +1250,44 @@ ul {
 
 
 /* fnancing page css start here */
+.finance-section {
+  padding: 64px 0 95px 0;
+  background-image: url('../images/home-pattern.webp');
+  background-size: cover;
+}
 
-/* Container & Section Spacing */
+.calculator-card .custom-form-control {
+  background: #221f200a
+}
+
+.calculator-title {
+  color: var(--Blackish, #221F20);
+  text-align: center;
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.finance-text {
+  color: var(--white, #FFF);
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+.calculator-card {
+  border: 1px solid var(--Light-Gray---D9, #D9D9D9);
+  background: var(--white, #FFF);
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
 .marina-financing {
   width: 100%;
   padding: 80px 20px;
@@ -3700,6 +3736,12 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+  .finance-text {
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+  }
+
   .marina-heading-blue {
     font-size: 1.75rem;
   }
@@ -4064,6 +4106,13 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .finance-text {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .finance-section {
+    padding: 50px 0;
+}
   .robalo-lineup-item {
     padding: 30px 15px;
   }
