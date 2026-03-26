@@ -171,8 +171,8 @@
 }
 
 .form-sec {
-  padding: 64px 20px 80px 20px;
-  background: #F7F7F7;
+  padding: 80px 20px 80px 20px;
+  background: #fff;
 }
 
 .common-form-wrapper {
@@ -1309,18 +1309,21 @@ ul {
 
 /* brand page css start here */
 .inven-sec-header {
-    padding-top: 64px;
-    padding-bottom: 40px;
+  padding-top: 64px;
+  padding-bottom: 40px;
 }
+
 .inventory-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 108px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 108px;
 }
+
 .inventory-card {
-    width: calc(100% / 3);
-    padding: 7px;
+  width: calc(100% / 3);
+  padding: 7px;
 }
+
 .brand-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -3326,7 +3329,7 @@ footer {
 .services-tabs .list-group-item.active {
   border: 2px solid var(--Aqua, #007AA9);
   background: var(--white, #FFF);
-  color: #17a2b8;
+  color: var(--Aqua);
 }
 
 .services-tabs .list-group-item.active .arrow-icon {
@@ -3357,115 +3360,15 @@ footer {
   margin-bottom: 28px;
 }
 
-/* Mobile specific styling */
-@media (max-width: 991.98px) {
-  .service-content {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-top: none;
-    margin-bottom: 15px;
-  }
-
-  .services-tabs .list-group-item {
-    margin-bottom: 0;
-    margin-top: 16px;
-  }
-
-  .service-content {
-    margin-bottom: 0;
-  }
+.services-section {
+  padding-top: 90px;
+  padding-bottom: 120px;
 }
 
-/* Responsive Scaling */
-@media (max-width: 991px) {
-  .inventory-card {
-        width: calc(100% / 2);
-    }
-  .welcome-banner .hero-content-wrapper {
-    padding: 0px 40px;
-  }
-
-  .marina-content-col {
-    text-align: center;
-  }
-
-  .service-link-card {
-    width: calc(100% / 2 - 4px);
-  }
-
-  .marina-action-group {
-    justify-content: center;
-  }
-
-  .common-header {
-    margin-bottom: 0;
-  }
-
-  .experties-sec {
-    padding: 50px 0 0 0;
-  }
-
-  .clemens-featured-img img {
-    min-height: 300px;
-  }
-
-  .process-section {
-    padding: 50px 0;
-  }
-
-  .process-cta-container {
-    margin-top: 22px;
-  }
-
-  .marina-title-white {
-    font-size: 1.8rem;
-  }
-}
-
-/* Responsive Tweaks */
-@media (max-width: 767px) {
-      .inventory-card {
-        width: 100%;
-    }
-  .marina-heading-blue {
-    font-size: 35px;
-    line-height: 42px;
-  }
-
-  .marina-hero-trade,
-  .marina-hero-overlay {
-    min-height: 500px;
-  }
-
-  .marina-hero-title {
-    font-size: 1.8rem;
-  }
-
-  .marina-btn-outline {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* Layout Spacing Adjustments */
 @media (min-width: 992px) {
   .marina-content-col {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .marina-heading-blue {
-    font-size: 1.75rem;
-  }
-
-  .marina-btn-primary {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 0.5rem;
   }
 }
 
@@ -3544,6 +3447,11 @@ footer {
 }
 
 @media (max-width: 1500px) {
+  .services-section {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
   .service-content {
     padding: 0 25px 0 30px;
   }
@@ -3656,8 +3564,6 @@ footer {
     padding: 24.5px 75px 19px 85.623px;
   }
 }
-
-
 
 @media screen and (max-width: 1200px) {
   .service-content {
@@ -3793,6 +3699,91 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+  .marina-heading-blue {
+    font-size: 1.75rem;
+  }
+
+  .marina-btn-primary {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .inventory-card {
+    width: calc(100% / 2);
+  }
+
+  .welcome-banner .hero-content-wrapper {
+    padding: 0px 40px;
+  }
+
+  .marina-content-col {
+    text-align: center;
+  }
+
+  .service-link-card {
+    width: calc(100% / 2 - 4px);
+  }
+
+  .marina-action-group {
+    justify-content: center;
+  }
+
+  .common-header {
+    margin-bottom: 0;
+  }
+
+  .experties-sec {
+    padding: 50px 0 0 0;
+  }
+
+  .clemens-featured-img img {
+    min-height: 300px;
+  }
+
+  .process-section {
+    padding: 50px 0;
+  }
+
+  .process-cta-container {
+    margin-top: 22px;
+  }
+
+  .marina-title-white {
+    font-size: 1.8rem;
+  }
+
+  .services-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .title-heading-lg {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .service-content:not(.d-none) {
+    border-color: var(--Aqua);
+  }
+
+  .service-content {
+    background: #fff;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-top: none;
+    margin-bottom: 15px;
+  }
+
+  .services-tabs .list-group-item {
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
+
+  .service-content {
+    margin-bottom: 0;
+  }
+
   .service-link-card {
     padding-top: 62%;
   }
@@ -3994,6 +3985,30 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .inventory-card {
+    width: 100%;
+  }
+
+  .marina-heading-blue {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .marina-hero-trade,
+  .marina-hero-overlay {
+    min-height: 500px;
+  }
+
+  .marina-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .marina-btn-outline {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
   .service-link-card {
     padding-top: 124%;
   }
