@@ -537,10 +537,6 @@ ul {
   line-height: normal;
 }
 
-.positioned-banner {
-  object-position: -50% 100%;
-}
-
 /* Common css ends here  */
 
 /* desktop header start here */
@@ -953,6 +949,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  margin-bottom: 4px;
 }
 
 .location-subtitle {
@@ -2785,7 +2782,8 @@ footer {
   height: 100%;
 }
 
-.welcome-img img {
+.welcome-img img,
+.welcome-img iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3475,6 +3473,77 @@ footer {
   padding-bottom: 120px;
 }
 
+/* locations page css start here */
+
+.featured-list {
+  padding-left: 20px;
+}
+
+.location-services-section {
+  padding-bottom: 88px;
+}
+
+.location-services-header {
+  padding-top: 60px;
+  padding-bottom: 88px;
+  text-align: center;
+}
+
+.location-services-header .title-heading-lg {
+  position: relative;
+}
+
+.location-services-header .title-heading-lg::after {
+  position: absolute;
+  content: '';
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: var(--Aqua);
+}
+
+.map-section {
+  margin: 80px auto;
+}
+
+.banner-subtitle {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.banner-subtitle-lg {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 47px;
+  margin-top: 28px;
+}
+
+.banner-title-light {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Lato;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 @media (min-width: 992px) {
   .marina-content-col {
     padding-top: 2rem;
@@ -3483,6 +3552,10 @@ footer {
 }
 
 @media (max-width: 1600px) {
+  .banner-title-light {
+    font-size: 60px;
+  }
+
   .title-heading-lg {
     font-size: 40px;
     line-height: 45px;
@@ -3632,6 +3705,28 @@ footer {
 }
 
 @media screen and (max-width: 1440px) {
+  .banner-subtitle {
+    margin-bottom: 10px;
+  }
+
+  .banner-subtitle-lg {
+    margin-bottom: 32px;
+    font-size: 20px;
+    margin-top: 13px;
+  }
+
+  .banner-title-light {
+    font-size: 55px;
+  }
+
+  .location-services-section {
+    padding-bottom: 60px;
+  }
+
+  .location-services-header {
+    padding-top: 30px;
+  }
+
   .services-sidebar {
     margin-right: 0;
   }
@@ -3683,6 +3778,10 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+  .banner-title-light {
+    font-size: 45px;
+  }
+
   .service-content {
     padding: 0;
   }
@@ -3816,6 +3915,31 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+  .location-services-section {
+    padding-bottom: 30px;
+  }
+
+  .map-section {
+    margin: 50px auto;
+  }
+
+  .featured-list {
+    padding-left: 0;
+  }
+
+  .featured-list li {
+    list-style: none;
+  }
+
+  .welcome-banner .hero-content-wrapper {
+    min-height: unset;
+  }
+
+  .welcome-img img,
+  .welcome-img iframe {
+    min-height: 300px;
+  }
+
   .banner-title {
     font-size: 30px;
     line-height: 35px;
@@ -3999,10 +4123,6 @@ footer {
     max-width: 100%;
     text-align: center;
     padding-top: 0;
-  }
-
-  .positioned-banner {
-    object-position: unset;
   }
 
   .clemens-lg-container .clemens-featured-box,
@@ -4193,6 +4313,14 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .banner-title-light {
+    font-size: 40px;
+  }
+
+  .banner-subtitle-lg {
+    font-size: 18px;
+  }
+
   .banner-title {
     font-size: 25px;
     line-height: 32px;
@@ -4321,4 +4449,10 @@ footer {
   .form-wrapper {
     padding: 40px 20px 40px 20px;
   }
+}
+
+@media screen and (max-width: 400px) {
+      .banner-title-light {
+        font-size: 35px;
+    }
 }
