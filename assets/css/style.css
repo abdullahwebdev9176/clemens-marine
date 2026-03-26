@@ -3328,6 +3328,32 @@ footer {
 }
 
 /* service page css start here */
+.service-hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.banner-brightness {
+  filter: brightness(0.5);
+}
+
+.banner-title {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
 
 .service-featured-col {
   background-image: url('../images/service/service-pattern.webp');
@@ -3336,7 +3362,6 @@ footer {
   background-position: center;
 }
 
-/* Sidebar Styles */
 .services-sidebar {
   border-radius: 5px;
   margin-right: 25px;
@@ -3484,6 +3509,13 @@ footer {
 }
 
 @media (max-width: 1500px) {
+  .banner-title {
+    font-size: 35px;
+    line-height: 43px;
+    letter-spacing: 2px;
+    margin-bottom: 33px;
+  }
+
   .services-section {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -3736,6 +3768,13 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+  .banner-title {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+  }
+
   .finance-text {
     font-size: 40px;
     line-height: 45px;
@@ -4106,13 +4145,22 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .banner-title {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+
   .finance-text {
-        font-size: 35px;
-        line-height: 40px;
-    }
-    .finance-section {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .finance-section {
     padding: 50px 0;
-}
+  }
+
   .robalo-lineup-item {
     padding: 30px 15px;
   }
