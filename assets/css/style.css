@@ -2070,8 +2070,8 @@ footer {
   padding: 60px 40px;
 }
 
-.footer-column h4,
-.footer-column h3 {
+.footer-col-heading,
+.footer-col-heading {
   color: var(--Blackish, #221F20);
   font-family: Lato;
   font-size: 16px;
