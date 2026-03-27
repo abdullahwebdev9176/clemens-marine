@@ -3619,7 +3619,9 @@ footer {
   object-fit: cover;
   padding: 20px;
 }
-
+.honda-sec .yamaha-img{
+  padding-top: 94% !important;
+}
 .repowerTextWrap {
   margin-top: 16px;
   margin-bottom: 16px;
